@@ -8,7 +8,8 @@ boxjs订阅地址:https://gitee.com/passerby-b/javascript/raw/master/JD/passerby
 TG群:https://t.me/passerbyb2021
 
 [task_local]
-10 0 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_plantBeans.js, tag=宠汪汪积分兑换奖品
+#京东到家鲜豆庄园
+10 0 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_plantBeans.js, tag=京东到家鲜豆庄园
 
 [Script]
 cron "10 0 * * *" script-path=https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_plantBeans.js,tag=京东到家鲜豆庄园
