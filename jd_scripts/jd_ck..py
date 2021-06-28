@@ -26,7 +26,6 @@ def token_get():
     token_post(s_token)
     # return s_token
 
-
 def token_post(s_token):
     t = round(time.time() * 1000)
     headers = {
