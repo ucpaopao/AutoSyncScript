@@ -1,4 +1,4 @@
-name: lxk0301-sync
+name: jiulan-sync
 on:
   schedule:
     - cron: '4 */3 * * *'
