@@ -1,4 +1,4 @@
-name: Peng-YM-sync
+name: Yanyuwangluo-sync
 on:
   schedule:
     - cron: '1 */3 * * *'
@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-Peng-YM-QuanX
+    types: sync-Yanyuwangluo
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync Peng-YM-QuanX
+      - name: sync Yanyuwangluo
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/Peng-YM/QuanX.git"
-          source_branch: "master"
-          destination_branch: "Peng-YM"
+          source_repo: "https://github.com/yanyuwangluo/JD_docker.git"
+          source_branch: "main"
+          destination_branch: "YanyuwangluoM"
           github_token: ${{ secrets.PAT }}
