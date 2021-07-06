@@ -18,8 +18,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync jiulan-DogDog
-        uses: repo-she1pu
+      - name: sync he1pu
+        uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/he1pu/JDHelp.git"
