@@ -1,0 +1,28 @@
+name: jkluio78-sync
+on:
+  schedule:
+    - cron: '4 */3 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-jkluio78
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync jkluio78
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/jkluio78/JD_tencent_scf.git"
+          source_branch: "main"
+          destination_branch: "jkluio78"
+          github_token: ${{ secrets.PAT }}
