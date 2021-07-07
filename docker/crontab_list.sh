@@ -128,3 +128,5 @@
 0 0,9,18,23 * * * node /scripts/jd_iroyway_shop_sign.js >> /scripts/logs/jd_iroyway_shop_sign.log 2>&1
 #图形验证码签到
 0 0,12 * * * node /scripts/jd_sign.js >> /scripts/logs/jd_sign.log 2>&1
+#点点卷
+36 0,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
