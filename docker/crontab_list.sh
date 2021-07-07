@@ -120,3 +120,5 @@
 15 0,12,22 * * * node /scripts/jd_jxmc.js >> /scripts/logs/jd_jxmc.log 2>&1
 #天天加速
 8 0-23/3 * * * node /scripts/jd_speed.js >> /scripts/logs/jd_speed.log 2>&1
+#京东健康兑换商品
+0 0 * * * node /scripts/star_health_change.js >> /scripts/logs/star_health_change.log 2>&1
