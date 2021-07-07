@@ -122,3 +122,5 @@
 8 0-23/3 * * * node /scripts/jd_speed.js >> /scripts/logs/jd_speed.log 2>&1
 #京东健康兑换商品
 0 0 * * * node /scripts/jd_star_health_change.js >> /scripts/logs/jd_star_health_change.log 2>&1
+#京喜工厂开团
+0 0,2,4,8 * * * node /scripts/jd_star_dreamFactory_tuan.js >> /scripts/logs/jd_star_dreamFactory_tuan.log 2>&1
