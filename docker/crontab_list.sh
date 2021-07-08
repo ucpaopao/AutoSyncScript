@@ -136,3 +136,6 @@
 10 8 * * * node /scripts/jd_jddj_plantBeans.js >> /scripts/logs/jd_jddj_plantBeans.log 2>&1
 */5 * * * * node /scripts/jd_jddj_getPoints.js >> /scripts/logs/jd_jddj_getPoints.log 2>&1
 */5 * * * * node /scripts/jd_jddj_fruit_collectWater.js >> /scripts/logs/jd_jddj_fruit_collectWater.log 2>&1
+
+#燃动夏季
+12 9,11,13,15,17 * * * /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
