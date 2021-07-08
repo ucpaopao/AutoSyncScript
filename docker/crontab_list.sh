@@ -140,4 +140,4 @@
 #燃动夏季
 12 9,11,13,15,17 * * * node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
 #送豆得豆
-15 2,14,22 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log
+15 2,14,22 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.logg 2>&1
