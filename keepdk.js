@@ -1,4 +1,12 @@
-
+/*
+20210709 Milo
+软件名：微信小程序keep早起打卡
+[rewrite_remote]
+https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy  script-request-header  https://raw.githubusercontent.com/milomoon/MyScripts/main/keepjs.js
+[HITM]
+www.xiaeke.com
+cron 0 6 * * *
+*/
 
 
 
