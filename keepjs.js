@@ -9,6 +9,8 @@ https://www.xiaeke.com/benmao/index.php/Home/MorningTree/gainEnergy  script-requ
 [HITM]
 www.xiaeke.com
 
+cron 0/30 * * * *
+
 */
 
 
