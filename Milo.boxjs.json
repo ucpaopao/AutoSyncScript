@@ -2,7 +2,7 @@
   "id": "Milo.task.sub",
   "name": "Milo 脚本订阅",
   "author": "@Milo",
-  //"icon": "https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.png",
+  
   "repo": "https://github.com/milomoon/MyScripts",
   "apps": [
      {
@@ -30,6 +30,6 @@
             "desc": "0关闭通知，1打开通知"
     }],
             "repo": "https://raw.githubusercontent.com/milomoon/MyScripts/main/keepjs.js",
-            //"icons": ["https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg","https://raw.githubusercontent.com/xl2101200/-/main/tom/tom.jpg"],
+           
             "script": "https://raw.githubusercontent.com/milomoon/MyScripts/main/keepjs.js"
     }
