@@ -1,5 +1,5 @@
 /*
-抢9减3，500赛点兑换500京豆
+京东汽车兑换，500赛点兑换500京豆
 长期活动
 
 活动入口：京东APP首页-京东汽车-屏幕右中部，车主福利
@@ -11,20 +11,20 @@
 
 ============Quantumultx===============
 [task_local]
-#抢9减3
-59 7,9,11,13,15 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, tag=抢9减3, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
+#京东汽车兑换
+0 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, tag=京东汽车兑换, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "59 7,9,11,13,15 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, tag=抢9减3
+cron "0 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, tag=京东汽车兑换
 
 ===============Surge=================
-抢9减3 = type=cron,cronexp=59 7,9,11,13,15 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js
+京东汽车兑换 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js
 
 ============小火箭=========
-抢9减3 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, cronexpr="59 7,9,11,13,15 * * *", timeout=3600, enable=true
+京东汽车兑换 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, cronexpr="0 0 * * *", timeout=3600, enable=true
  */
-const $ = new Env('抢9减3');
+const $ = new Env('京东汽车兑换');
 const moment = require('moment');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -49,7 +49,7 @@ let wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', { "open-url": "https://bean.m.jd.com/bean/signIndex.action" });
     return;
   }
-    await wait(58000)
+  await wait(58000)
   for (let j = 0; j < randomCount; ++j)
     for (let i = 0; i < cookiesArr.length; i++) {
       if (cookiesArr[i]) {
