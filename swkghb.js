@@ -1,3 +1,16 @@
+/*
+20210711 Milo
+软件名：微信小程序三五矿工
+[rewrite_remote]
+https://wakuang.lfz140315.ltd/app/index.php  script-request-header  https://raw.githubusercontent.com/milomoon/MyScripts/main/swkghb.js
+[HITM]
+wakuang.lfz140315.ltd
+cron 5 0/1 * * *
+*/
+
+
+
+
 
 const $ = new Env('三五矿工红包');
 let swkghburl = $.getdata('swkghburl')
