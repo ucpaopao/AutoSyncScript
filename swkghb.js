@@ -18,7 +18,7 @@ let H = now.getHours();
   .finally(() => $.done())
 //ck
 function swkghbck() {
-   if ($request.url.indexOf("rain_open") > -1) {
+   if ($request.url.indexOf("index.php?i") > -1) {
     $.setdata($request.url,'swkghburl')
     $.log(swkghburl)
 $.setdata(JSON.stringify($request.headers),'swkghbhd')
