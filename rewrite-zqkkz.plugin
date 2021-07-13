@@ -15,7 +15,7 @@ http-request ^https?://(ios\.baertt|kandian\.wkandian)\.com/v5/Nameless/adlickst
 http-response ^https://kd\.youth\.cn/WebApi/NewTaskIos/getTaskList script-path=https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, requires-body=1, tag=中青转发、看看赚入口
 
 # 已有阅读时长数据时，只保存大于1分钟的时长数据
-http-request ^https?://(ios\.baertt|kandian\.wkandian)\.com/v5/user/app_stay\.json script-path=https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, requires-body=1, tag=中青iOS时长数据
+http-request ^https?://(ios\.baertt|kandian\.wkandian)\.com/v5/user/stay|app_stay\.json script-path=https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, requires-body=1, tag=中青iOS时长数据
 
 # Loon 定时任务配置
 # cron "30 6 * * *" script-path=https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, enabled=true, tag=中青看看赚
