@@ -1,18 +1,59 @@
 {
- "name": "Milo task",
- "description": "自用",
- "task": [
-
-    "10 */1 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js, tag=sunert中青看点脚本, enabled=true",
-
-    "0 6 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=sunert中青看点看看赚, enabled=true",
-   
-    "15 */1 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/ztyouth.js, tag=ztxtop中青看点脚本, enabled=true",
-   
-    "30 6 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, tag=ztxtop中青看点看看赚,  enabled=true",
-   
-    "0/30 * 8,10,12,15,17 * * *  https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js, tag=ztxtop中青阅读, enabled=true",
-   
-    
-    ]
+  "name": "Milo task",     // 订阅名称
+  //"author": "https://t.me/elecV2",    // 订阅制作者，可省略
+  //"date": "2021-02-26 23:32:04",      // 订阅生成时间，可省略
+  //"surl": "https://raw.githubusercontent.com/elecV2/elecV2P/master/efss/tasksub.json",  // 原始订阅链接，可省略
+  "desc": "自用",
+  "list": [                           // 任务列表。任务格式参考上面的 task.list 部分
+    {
+      "name": "sunert中青看点脚本",
+      "type": "cron",
+      "time": "10 */1 * * *",
+      "running": true,                // running 状态可省略。仅当 running 值为 false 时，表示只添加该任务而不运行
+      "job": {
+        "type": "runjs",              // 远程订阅的任务类型只支持 runjs(运行 JS) 和 exec(执行 Shell 指令)
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js"
+      }
+    },
+    {
+      "name": "sunert中青看点看看赚",            // 当 running 值省略时，添加任务也会自动执行
+      "type": "cron",
+      "time": "0 6 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js"
+      }
+    },
+    {
+      "name": "ztxtop中青看点脚本",
+      "type": "cron",
+      "time": "15 */1 * * *",
+      "running": true,               // 当 running 值为 false 时，任务只添加不运行
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/ztyouth.js"
+      }
+    },
+   {
+      "name": "ztxtop中青看点看看赚",
+      "type": "cron",
+      "time": "30 6 * * *",
+      "running": true,               // 当 running 值为 false 时，任务只添加不运行
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js"
+      }
+    },
+    {
+      "name": "ztxtop中青阅读",
+      "type": "cron",
+      "time": "0/30 * 8,10,12,15,17 * * *",
+      "running": true,               // 当 running 值为 false 时，任务只添加不运行
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js"
+      }
+    }
+  ]
 }
