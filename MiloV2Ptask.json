@@ -54,6 +54,26 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js"
       }
+    },
+    {
+      "name": "keep早起打卡",
+      "type": "cron",
+      "time": "0 6 * * *",
+      "running": true,               // 当 running 值为 false 时，任务只添加不运行
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/keepdk.js"
+      }
+     },
+    {
+      "name": "keep浇水",
+      "type": "cron",
+      "time": "0/30 * * * *",
+      "running": true,               // 当 running 值为 false 时，任务只添加不运行
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/milomoon/MyScripts/main/keepjs.js"
+      }
     }
   ]
 }
