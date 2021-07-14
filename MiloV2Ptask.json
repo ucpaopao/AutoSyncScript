@@ -56,7 +56,7 @@
       }
     },
     {
-      "name": "keep早起打卡",
+      "name": "keep签到",
       "type": "cron",
       "time": "0 6 * * *",
       "running": true,               // 当 running 值为 false 时，任务只添加不运行
