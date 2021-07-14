@@ -3,15 +3,15 @@
  "description": "自用",
  "task": [
 
-    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js, tag=sunert中青看点脚本, enabled=true",
+    "10 */1 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js, tag=sunert中青看点脚本, enabled=true",
 
-    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=sunert中青看点看看赚, enabled=true",
+    "0 6 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=sunert中青看点看看赚, enabled=true",
    
-    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/ztyouth.js, tag=ztxtop中青看点脚本, enabled=true",
+    "15 */1 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/ztyouth.js, tag=ztxtop中青看点脚本, enabled=true",
    
-    "0 10 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=ztxtop中青看点看看赚,  enabled=true",
+    "30 6 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_banner.js, tag=ztxtop中青看点看看赚,  enabled=true",
    
-    "0 10 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js, tag=ztxtop中青阅读, enabled=true",
+    "0/30 * 8,10,12,15,17 * * *  https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js, tag=ztxtop中青阅读, enabled=true",
    
     
     ]
