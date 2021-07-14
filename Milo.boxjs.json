@@ -122,7 +122,9 @@
             {
               "key": "100", 
               "label": "100元"
-            }],
+            }
+                   ]
+        }],
             "repo": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js",
            
             "script": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js"
