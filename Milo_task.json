@@ -1,0 +1,18 @@
+{
+ "name": "Milo task",
+ "description": "自用",
+ "task": [
+
+    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js, tag=sunert中青看点脚本, enabled=true",
+
+    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=sunert中青看点看看赚, enabled=true",
+   
+    "0 8 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/ztyouth.js, tag=ztxtop中青看点脚本, enabled=true",
+   
+    "0 10 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js, tag=ztxtop中青看点看看赚,  enabled=true",
+   
+    "0 10 * * * https://raw.githubusercontent.com/milomoon/MyScripts/main/zqread.js, tag=ztxtop中青阅读, enabled=true",
+   
+    
+    ]
+}
