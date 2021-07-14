@@ -50,7 +50,7 @@ let url = {
         //url : `https://www.xiaeke.com/benmao/index.php/Home/MorningNote/addNote?user_id=${user_id}`,
         url : keepjsurl ,
         headers : 
-sessionStorage.getItem($.getdata('keepjshd')),
+($.getdata('keepjshd')),
         //body : keepjsbody}
 }
       $.get(url, async (err, resp, data) => {
