@@ -128,6 +128,56 @@
             "repo": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js",
            
             "script": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth.js"
+    },
+            {
+            "id": "youthGain",
+            "name": "sunert中青浏览赚&看看赚",
+            "keys": ["youth_start", 
+                     "youth_look"],
+            "author": "@Milo",
+            "settings": [{
+            "id": "youthGainstatus",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前抓取ck记录的账号序号，如：1、2、3、4"
+    },
+    {
+            "id": "youthGaincount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+    },
+    {
+            "id": "tz",
+            "name": "通知",
+            "val": "1",
+            "type": "number",
+            "desc": "0关闭通知，1打开通知"
+    }],
+            "repo": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js",
+           
+            "script": "https://raw.githubusercontent.com/milomoon/MyScripts/main/youth_gain.js"
+    },
+           {
+            "id": "Youth_Read",
+            "name": "sunert中青自动阅读",
+            "keys": [ "youth_autoread", 
+                      "autotime_zq"],
+            "author": "@Milo",
+            "settings": [{
+          "id": "youth_cut", 
+          "val": false, 
+          "name": "缩减请求", 
+          "type": "boolean", 
+          "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
+        }
+                        ],
+            "repo": "https://raw.githubusercontent.com/milomoon/MyScripts/main/Youth_Read.js",
+           
+            "script": "https://raw.githubusercontent.com/milomoon/MyScripts/main/Youth_Read.js"
     }
+           
     ]
 }
