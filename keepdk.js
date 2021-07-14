@@ -48,7 +48,7 @@ function zqdkqd(timeout = 0) {
 //let url = {url : `https://www.xiaeke.com/benmao/index.php/Home/MorningNote/addNote?user_id=${user_id}`,
   let url = {url : zqdkurl,
         headers : 
-JSON.parse($.getdata('zqdkhd')),
+($.getdata('zqdkhd')),
         //body : zqdkbody}
 }
       $.get(url, async (err, resp, data) => {
