@@ -2,7 +2,7 @@ hostname = ios.baertt.com
 
 
 # 获取阅读所需数据：配置好此重写规则，进入app待阅读的文章视频页面，获取完阅读数据后返回，进入下一个阅读页面
-^https?://(ios\.baertt|kandian\.wkandian)\.com/v5/article/(info/get|info|detail)\.json url script-request-header   https://raw.githubusercontent.com/milomoon/MyScripts/main/Youth_Read.js
+^https?://(ios\.baertt|kandian\.wkandian)\.com/v5/article/(info/get|info|detail)\.json url script-request-header https://raw.githubusercontent.com/milomoon/MyScripts/main/Youth_Read.js
 
 
 # 已有阅读时长数据时，只保存大于1分钟的时长数据
