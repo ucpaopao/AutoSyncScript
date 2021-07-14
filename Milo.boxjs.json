@@ -36,7 +36,7 @@
 
 {
             "id": "keepdk",
-            "name": "keep打卡",
+            "name": "keep签到",
             "keys": ["zqdkurl","zqdkhd"],
             "author": "@Milo",
             "settings": [{
