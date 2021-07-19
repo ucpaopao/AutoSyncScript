@@ -54,7 +54,7 @@ function xcmhdqd(timeout = 0) {
 //let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
   let url = {url : xcmhdurl,
         headers : 
-JSON.parse($.getdata('xcmhdhd')),
+JSON.parse(xcmhdhd),
         body : `{"moduleId":1,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
 }
       $.post(url, async (err, resp, data) => {
@@ -81,7 +81,7 @@ function xcmhdqd1(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
     let url = {url : xcmhdurl,
           headers : 
-  JSON.parse($.getdata('xcmhdhd')),
+  JSON.parse(xcmhdhd),
           body : `{"moduleId":2,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
   }
         $.post(url, async (err, resp, data) => {
@@ -108,7 +108,7 @@ function xcmhdqd1(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
     let url = {url : xcmhdurl,
           headers : 
-  JSON.parse($.getdata('xcmhdhd')),
+  JSON.parse(xcmhdhd),
           body : `{"moduleId":3,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
   }
         $.post(url, async (err, resp, data) => {
