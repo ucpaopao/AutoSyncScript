@@ -19,12 +19,17 @@ const $ = new Env('携程签到');
 let xcqdurl = $.getdata('xcqdurl')
 let xcqdhd = $.getdata('xcqdhd')
 let xcqdbody = $.getdata('xcqdbody')
+let xcszurl = $.getdata('xcszurl')
+let xcszhd = $.getdata('xcszhd')
+let xcszbody = $.getdata('xcszbody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcqdck()
   } else {
     await xcqdqd();
+    await $.wait(1000);
+    await xcszqd();
     await $.wait(1000);
 }
 })()
@@ -40,7 +45,15 @@ $.log(xcqdhd)
     $.setdata($request.body,'xcqdbody')
 $.log(xcqdbody)
    $.msg($.name,"","携程签到获取headers成功！")
-    } 
+    }else if ($request.url.indexOf("roll") > -1) {
+      $.setdata($request.url,'xcszurl')
+      $.log(xcszurl)
+  $.setdata(JSON.stringify($request.headers),'xcszhd')
+  $.log(xcszhd)
+      $.setdata($request.body,'xcszbody')
+  $.log(xcszbody)
+     $.msg($.name,"","携程骰子获取body成功！")
+      }
   }
 
 //签到  
@@ -52,6 +65,33 @@ function xcqdqd(timeout = 0) {
         headers : 
 JSON.parse($.getdata('xcqdhd')),
         body : xcqdbody
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.errcode == 0){
+        console.log('\n签到成功：'+result.errmsg)
+}else{
+        console.log('\n签到失败或已签到'+result.errmsg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+
+function xcszqd(timeout = 0) {
+  return new Promise((resolve) => {
+//user_id=xcqdurl.match(/user_id=(\d+)/)[1]
+//let url = {url : `https://m.ctrip.com/restapi/soa2/16575/signin`,
+  let url = {url : xcszurl,
+        headers : 
+JSON.parse($.getdata('xcszhd')),
+        body : xcszbody
 }
       $.post(url, async (err, resp, data) => {
         try {
