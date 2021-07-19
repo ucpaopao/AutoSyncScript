@@ -4,7 +4,7 @@
 20210719 Milo
 软件名：微信小程序携程：梦幻岛
 [rewrite_remote]
-https://m.ctrip.com/restapi/soa2/20794/gatherCoin?  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/xcmhd.js
+https://m.ctrip.com/restapi/soa2  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/xcmhd.js
 [HITM]
 m.ctrip.com
 cron 0 0/6 * * *
