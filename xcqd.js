@@ -22,6 +22,9 @@ let xcqdbody = $.getdata('xcqdbody')
 let xcszurl = $.getdata('xcszurl')
 let xcszhd = $.getdata('xcszhd')
 let xcszbody = $.getdata('xcszbody')
+let xchyurl = $.getdata('xcszurl')
+let xchyhd = $.getdata('xcszhd')
+let xchybody = $.getdata('xcszbody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -30,6 +33,8 @@ let user_id = ''
     await xcqdqd();
     await $.wait(1000);
     await xcszqd();
+    await $.wait(1000);
+    await xchyqd();
     await $.wait(1000);
 }
 })()
@@ -52,6 +57,14 @@ $.log(xcqdbody)
   $.log(xcszhd)
       $.setdata($request.body,'xcszbody')
   $.log(xcszbody)
+     $.msg($.name,"","携程会员签到body成功！")
+      }else if ($request.url.indexOf("saveDailyBonus?") > -1) {
+      $.setdata($request.url,'xchyurl')
+      $.log(xchyurl)
+  $.setdata(JSON.stringify($request.headers),'xchyhd')
+  $.log(xchyhd)
+      $.setdata($request.body,'xchybody')
+  $.log(xchybody)
      $.msg($.name,"","携程骰子获取body成功！")
       }
   }
@@ -101,6 +114,33 @@ JSON.parse($.getdata('xcszhd')),
         console.log('\n签到成功：'+result.errmsg)
 }else{
         console.log('\n签到失败或已签到'+result.errmsg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
+
+
+function xchyqd(timeout = 0) {
+  return new Promise((resolve) => {
+//user_id=xcqdurl.match(/user_id=(\d+)/)[1]
+//let url = {url : `https://m.ctrip.com/restapi/soa2/16575/signin`,
+  let url = {url : xchyurl,
+        headers : 
+JSON.parse($.getdata('xchyhd')),
+        body : xchybody
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.resultcode == 0){
+        console.log('\n签到成功：'+result.resultmessage)
+}else{
+        console.log('\n签到失败或已签到'+result.resultmessage)
 }
         } catch (e) {
         } finally {
