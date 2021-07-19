@@ -22,9 +22,9 @@ let xcqdbody = $.getdata('xcqdbody')
 let xcszurl = $.getdata('xcszurl')
 let xcszhd = $.getdata('xcszhd')
 let xcszbody = $.getdata('xcszbody')
-let xchyurl = $.getdata('xcszurl')
-let xchyhd = $.getdata('xcszhd')
-let xchybody = $.getdata('xcszbody')
+let xchyurl = $.getdata('xchyurl')
+let xchyhd = $.getdata('xchyhd')
+let xchybody = $.getdata('xchybody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
