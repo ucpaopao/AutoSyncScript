@@ -48,9 +48,10 @@ let user_id = ''
 
              await xcksp()
              await $.wait(5000)}
-}
+
     await xcck();
     await $.wait(1000);
+    }
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
