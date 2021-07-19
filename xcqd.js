@@ -71,7 +71,7 @@ $.log(xcqdbody)
       $.setdata($request.body,'xchybody')
   $.log(xchybody)
      $.msg($.name,"","携程骰子获取body成功！")
-      }else if ($request.url.indexOf("mkt/taskdistribute") > -1) {
+      }else if ($request.url.indexOf("userTodoTask") > -1) {
         $.setdata($request.url,'xckspurl')
         $.log(xckspurl)
     $.setdata(JSON.stringify($request.headers),'xcksphd')
