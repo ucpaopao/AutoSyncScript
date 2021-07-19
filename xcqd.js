@@ -4,7 +4,7 @@
 20210709 Milo
 软件名：微信小程序携程签到
 [rewrite_remote]
-https://m.ctrip.com/restapi/soa2/16575/signin  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/xcqd.js
+https://m.ctrip.com/restapi/soa2  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/xcqd.js
 [HITM]
 m.ctrip.com
 cron 0 6 * * *
