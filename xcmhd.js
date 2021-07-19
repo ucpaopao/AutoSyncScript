@@ -51,8 +51,8 @@ $.log(xcmhdbody)
 function xcmhdqd(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcmhdurl.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
-  let url = {url : xcmhdurl,
+let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?_fxpcqlniredt=09031168115742014444&x-traceID=09031168115742014444-1626653607881-2510511`,
+  //let url = {url : xcmhdurl,
         headers : 
 JSON.parse($.getdata('xcmhdhd')),
         body : {"moduleId":1,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
@@ -78,8 +78,8 @@ JSON.parse($.getdata('xcmhdhd')),
 function xcmhdqd1(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcmhdurl.match(/user_id=(\d+)/)[1]
-  //let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
-    let url = {url : xcmhdurl,
+  let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?_fxpcqlniredt=09031168115742014444&x-traceID=09031168115742014444-1626653607881-2510511`,
+    //let url = {url : xcmhdurl,
           headers : 
   JSON.parse($.getdata('xcmhdhd')),
           body : {"moduleId":2,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
@@ -105,8 +105,8 @@ function xcmhdqd1(timeout = 0) {
   function xcmhdqd2(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcmhdurl.match(/user_id=(\d+)/)[1]
-  //let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?`,
-    let url = {url : xcmhdurl,
+  let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?_fxpcqlniredt=09031168115742014444&x-traceID=09031168115742014444-1626653607881-2510511`,
+    //let url = {url : xcmhdurl,
           headers : 
   JSON.parse($.getdata('xcmhdhd')),
           body : {"moduleId":3,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
