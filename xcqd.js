@@ -60,7 +60,7 @@ JSON.parse($.getdata('xcqdhd')),
         if(result.errcode == 0){
         console.log('\n签到成功：'+result.errmsg)
 }else{
-        console.log('\n签到失败或已签到')
+        console.log('\n签到失败或已签到'+result.errmsg)
 }
         } catch (e) {
         } finally {
