@@ -162,11 +162,24 @@ function xckspqd1(timeout = 0) {
 function xcckspqd(timeout = 0) {
     return new Promise((resolve) => {
         //user_id=xckspurl.match(/user_id=(\d+)/)[1]
-        //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-          let url = {url : xcckspurl,
-                headers : 
-        JSON.parse(xccksphd),
-                body : xcckspbody
+        let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+          //let url = {url : xcckspurl,
+                headers : {
+'content-type' : `application/json`,
+'x-ctx-group' : `ctrip`,
+'Connection' : `keep-alive`,
+'Accept-Encoding' : `gzip,compress,br,deflate`,
+'x-ctx-locale' : `zh-CN`,
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.7(0x18000732) NetType/WIFI Language/zh_CN`,
+'x-ctx-region' : `CN`,
+'Cookie' : `Union=OUID=&AllianceID=262684&SID=711465&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;`,
+'Host' : `m.ctrip.com`,
+'x-ctx-currency' : `CNY`,
+'duid' : `u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0`,
+'x-wx-openid' : `bd023991-e658-44c7-8532-703e9993acdf`,
+'Referer' : `https://servicewechat.com/wx0e6ed4f51db9d078/461/page-frame.html`
+},
+                body :  `{"projectId":14,"demandId":69,"taskId":405,"isDone":1,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
         }
               $.post(url, async (err, resp, data) => {
                 try {
