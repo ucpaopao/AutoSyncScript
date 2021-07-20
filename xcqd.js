@@ -65,7 +65,8 @@ $.log(xcqdhd)
     $.setdata($request.body,'xcqdbody')
 $.log(xcqdbody)
    $.msg($.name,"","携程签到获取body成功！")
-    }else if ($request.url.indexOf("roll") > -1) {
+    }
+else if ($request.url.indexOf("roll") > -1) {
       $.setdata($request.url,'xcszurl')
       $.log(xcszurl)
   $.setdata(JSON.stringify($request.headers),'xcszhd')
@@ -73,7 +74,8 @@ $.log(xcqdbody)
       $.setdata($request.body,'xcszbody')
   $.log(xcszbody)
      $.msg($.name,"","携程骰子body成功！")
-      }else if ($request.url.indexOf("saveDailyBonus?") > -1) {
+      }
+else if ($request.url.indexOf("saveDailyBonus?") > -1) {
       $.setdata($request.url,'xchyurl')
       $.log(xchyurl)
   $.setdata(JSON.stringify($request.headers),'xchyhd')
@@ -81,7 +83,8 @@ $.log(xcqdbody)
       $.setdata($request.body,'xchybody')
   $.log(xchybody)
      $.msg($.name,"","携程会员签到获取body成功！")
-      }else if ($request.url.indexOf("userTodoTask") > -1) {
+      }
+else if ($request.url.indexOf("userTodoTask") > -1) {
         $.setdata($request.url,'xckspurl')
         $.log(xckspurl)
     $.setdata(JSON.stringify($request.headers),'xcksphd')
@@ -89,7 +92,8 @@ $.log(xcqdbody)
         $.setdata($request.body,'xckspbody')
     $.log(xckspbody)
        $.msg($.name,"","获取携程看视频body成功！")
-        }else if ($request.url.indexOf("sendZzlCardToUser") > -1) {
+        }
+else if ($request.url.indexOf("sendZzlCardToUser") > -1) {
           $.setdata($request.url,'xcckurl')
           $.log(xcckurl)
       $.setdata(JSON.stringify($request.headers),'xcckhd')
