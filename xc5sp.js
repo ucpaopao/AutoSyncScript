@@ -75,8 +75,8 @@ JSON.parse(xccksphd),
 function xc10s1(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcckspurl,
+let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  //let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
         body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
