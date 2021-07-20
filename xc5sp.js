@@ -14,8 +14,13 @@ let user_id = ''
   if (typeof $request !== "undefined") {
     await xcckspck()
   } else {
-    await xcckspqd();
-    await $.wait(1000);
+    for (let c = 0; c < 5; c++) {
+        $.index = c + 1
+       console.log(`\n第${c+1}次看视频！`)
+
+               await xcckspqd()
+               await $.wait(5000);}
+   
 }
 })()
   .catch((e) => $.logErr(e))
