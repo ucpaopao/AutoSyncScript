@@ -16,7 +16,7 @@ let user_id = ''
   } else {
     for (let c = 0; c < 8; c++) {
         $.index = c + 1
-       console.log(`\n第${c+1}次看视频！`)
+       console.log(`\n第${c+1}次发牌！`)
 
                await xcfpqd()
                await $.wait(1000);}
