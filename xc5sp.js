@@ -41,9 +41,9 @@ function xcckspqd(timeout = 0) {
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        //body : xcckspbody}
+        body : xcckspbody
 }
-      $.get(url, async (err, resp, data) => {
+      $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
