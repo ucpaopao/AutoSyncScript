@@ -20,9 +20,7 @@ let xcqdurl = $.getdata('xcqdurl')
 let xcqdhd = $.getdata('xcqdhd')
 let xcqdbody = $.getdata('xcqdbody')
 
-let xchyurl = $.getdata('xchyurl')
-let xchyhd = $.getdata('xchyhd')
-let xchybody = $.getdata('xchybody')
+
 
 let user_id = ''
 !(async () => {
@@ -31,8 +29,7 @@ let user_id = ''
   } else {
     await xcqdqd();
     await $.wait(1000);
-    await xchyqd();
-    await $.wait(1000);
+   
    
   }
 })()
@@ -47,17 +44,9 @@ $.setdata(JSON.stringify($request.headers),'xcqdhd')
 $.log(xcqdhd)
     $.setdata($request.body,'xcqdbody')
 $.log(xcqdbody)
-   $.msg($.name,"","携程签到获取headers成功！")
+   $.msg($.name,"","携程签到获取body成功！")
     }
-    else if ($request.url.indexOf("saveDailyBonus?") > -1) {
-      $.setdata($request.url,'xchyurl')
-      $.log(xchyurl)
-  $.setdata(JSON.stringify($request.headers),'xchyhd')
-  $.log(xchyhd)
-      $.setdata($request.body,'xchybody')
-  $.log(xchybody)
-     $.msg($.name,"","获取携程会员签到body成功！")
-      }
+    
   }
 
 //签到  
@@ -91,31 +80,7 @@ JSON.parse(xcqdhd),
 
 
 
-function xchyqd(timeout = 0) {
-  return new Promise((resolve) => {
-//user_id=xcqdurl.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/soa2/16575/signin`,
-  let url = {url : xchyurl,
-        headers : 
-JSON.parse(xchyhd),
-        body : xchybody
-}
-      $.post(url, async (err, resp, data) => {
-        try {
-           
-    const result = JSON.parse(data)
-        if(result.resultcode == 0){
-        console.log('\n签到成功：'+result.resultmessage)
-}else{
-        console.log('\n签到失败或已签到'+result.resultmessage)
-}
-        } catch (e) {
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-}
+
 
 
 
