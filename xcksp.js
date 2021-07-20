@@ -85,19 +85,7 @@ function xckspqd(timeout = 0) {
         let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
           //let url = {url : xckspurl,
                 headers : 
-        JSON.parse(`Accept-Encoding: gzip,compress,br,deflate
-        Connection: keep-alive
-        content-type: application/json
-        Cookie: Union=OUID=&AllianceID=262684&SID=711465&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;
-        duid: u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0
-        Host: m.ctrip.com
-        Referer: https://servicewechat.com/wx0e6ed4f51db9d078/460/page-frame.html
-        User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.7(0x18000732) NetType/WIFI Language/zh_CN
-        x-ctx-currency: CNY
-        x-ctx-group: ctrip
-        x-ctx-locale: zh-CN
-        x-ctx-region: CN
-        x-wx-openid: bd023991-e658-44c7-8532-703e9993acdf`),
+        JSON.parse(xcksphd),
                 body : `{"projectId":5,"demandId":34,"taskId":303,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2B053D93F76331B1346BDC1FD6D346022","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
         }
               $.post(url, async (err, resp, data) => {
@@ -124,19 +112,7 @@ function xckspqd1(timeout = 0) {
         let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
           //let url = {url : xckspurl,
                 headers : 
-        JSON.parse(`Accept-Encoding: gzip,compress,br,deflate
-        Connection: keep-alive
-        content-type: application/json
-        Cookie: Union=OUID=&AllianceID=262684&SID=711465&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;
-        duid: u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0
-        Host: m.ctrip.com
-        Referer: https://servicewechat.com/wx0e6ed4f51db9d078/460/page-frame.html
-        User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.7(0x18000732) NetType/WIFI Language/zh_CN
-        x-ctx-currency: CNY
-        x-ctx-group: ctrip
-        x-ctx-locale: zh-CN
-        x-ctx-region: CN
-        x-wx-openid: bd023991-e658-44c7-8532-703e9993acdf`),
+        JSON.parse(xcksphd),
                 body : `{"projectId":14,"demandId":70,"taskId":406,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
         }
               $.post(url, async (err, resp, data) => {
@@ -163,19 +139,7 @@ function xckspqd1(timeout = 0) {
         let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
           //let url = {url : xckspurl,
                 headers : 
-        JSON.parse(`Accept-Encoding: gzip,compress,br,deflate
-        Connection: keep-alive
-        content-type: application/json
-        Cookie: Union=OUID=&AllianceID=262684&SID=711465&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;
-        duid: u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0
-        Host: m.ctrip.com
-        Referer: https://servicewechat.com/wx0e6ed4f51db9d078/460/page-frame.html
-        User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.7(0x18000732) NetType/WIFI Language/zh_CN
-        x-ctx-currency: CNY
-        x-ctx-group: ctrip
-        x-ctx-locale: zh-CN
-        x-ctx-region: CN
-        x-wx-openid: bd023991-e658-44c7-8532-703e9993acdf`),
+        JSON.parse(xcksphd),
                 body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
         }
               $.post(url, async (err, resp, data) => {
