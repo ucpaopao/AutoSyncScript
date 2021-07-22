@@ -79,7 +79,7 @@ function xc10s1(timeout = 0) {
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":71,"taskId":407,"isDone":1,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2E0D84C6CD02E5DF4526031207B85AC35","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -107,7 +107,7 @@ function xc10s2(timeout = 0) {
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":70,"taskId":406,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":70,"taskId":406,"isDone":1,"head":{"cid":"09301147210247723310","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D276D841D1925A69631E8DF541E2657386","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
