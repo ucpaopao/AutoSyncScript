@@ -189,7 +189,7 @@ JSON.parse(xccksphd),
 
 
 
-function xc10s1(timeout = 0) {
+function xclq2(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
@@ -217,7 +217,7 @@ JSON.parse(xccksphd),
 
 
 
-function xc10s2(timeout = 0) {
+function xclq3(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
@@ -244,7 +244,7 @@ JSON.parse(xccksphd),
 }
 
 
-function xc10s3(timeout = 0) {
+function xclq4(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
