@@ -4,6 +4,9 @@ const $ = new Env('携程发牌');
 let xcfpurl = $.getdata('xcfpurl')
 let xcfphd = $.getdata('xcfphd')
 let xcfpbody = $.getdata('xcfpbody')
+let xcsjurl = $.getdata('xcsjurl')
+let xcsjhd = $.getdata('xcsjhd')
+let xcsjbody = $.getdata('xcsjbody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -12,12 +15,7 @@ let user_id = ''
   } else {
     await xcsj()
     await $.wait(1000)
-    for (let c = 0; c < 8; c++) {
-        $.index = c + 1
-       console.log(`\n第${c+1}次发牌！`)
-
-               await xcfpqd()
-               await $.wait(1000);}
+    
    
 }
 })()
