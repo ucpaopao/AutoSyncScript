@@ -137,8 +137,7 @@
 #validate.txt 生成
 58 7,15,23 * * * node /scripts/jd_validate_Worker.js >> /scripts/logs/jd_validate_Worker.log 2>&1
 
-#翻翻乐
-1 6-21/1 * * * node /scripts/jd_618redpacket.js >> /scripts/logs/jd_618redpacket.log 2>&1
+
 #翻翻乐助力开包
 1 0 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1
 
