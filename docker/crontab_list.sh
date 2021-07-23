@@ -83,8 +83,7 @@
 23 7 * * * node /scripts/jd_get_share_code.js >> /scripts/logs/jd_get_share_code.log 2>&1
 # 口袋书店
 38 8,12,18 * * * node /scripts/jd_bookshop.js >> /scripts/logs/jd_bookshop.log 2>&1
-# 京喜农场
-30 9,12,18 * * * node /scripts/jd_jxnc.js >> /scripts/logs/jd_jxnc.log 2>&1
+
 # 签到领现金
 10 */4 * * * node /scripts/jd_cash.js >> /scripts/logs/jd_cash.log 2>&1
 # 闪购盲盒
@@ -124,8 +123,7 @@
 0,2,4,8 0 * * * node /scripts/jd_star_dreamFactory_tuan.js >> /scripts/logs/jd_star_dreamFactory_tuan.log 2>&1
 #京东店铺签到
 0 0,9,18,23 * * * node /scripts/jd_iroyway_shop_sign.js >> /scripts/logs/jd_iroyway_shop_sign.log 2>&1
-#图形验证码签到
-#0 0,12 * * * node /scripts/jd_sign.js >> /scripts/logs/jd_sign.log 2>&1
+
 #点点卷
 36 0,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
 #新增京东到家
