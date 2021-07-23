@@ -133,10 +133,7 @@
 */5 * * * * node /scripts/jd_jddj_getPoints.js >> /scripts/logs/jd_jddj_getPoints.log 2>&1
 */5 * * * * node /scripts/jd_jddj_fruit_collectWater.js >> /scripts/logs/jd_jddj_fruit_collectWater.log 2>&1
 
-#送豆得豆
-15 2,14,22 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
-#QQ星系牧场
-1 0-23/2 * * * * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
+
 #validate.txt 生成
 58 7,15,23 * * * node /scripts/jd_validate_Worker.js >> /scripts/logs/jd_validate_Worker.log 2>&1
 
