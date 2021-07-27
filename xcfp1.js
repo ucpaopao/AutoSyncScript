@@ -70,8 +70,9 @@ function xcsj(timeout = 0) {
           console.log('\n获取次数成功：'+result.chanceNum)
   }else{
           console.log('\n获取次数失败：'+result.chanceNum)
+    let Y = result.chanceNum
   }
- let Y = result.chanceNum
+ 
           } catch (e) {
           } finally {
             resolve()
