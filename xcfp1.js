@@ -15,7 +15,12 @@ let user_id = ''
   } else {
     await xcsj()
     await $.wait(1000)
-    
+    for (let c = 0; c < $(Y); c++) {
+      $.index = c + 1
+     console.log(`\n第${c+1}次发牌！`)
+  
+             await xcfpqd()
+             await $.wait(1000);}
    
 }
 })()
@@ -75,12 +80,7 @@ function xcsj(timeout = 0) {
     })
   }
 
-  for (let c = 0; c < $(Y); c++) {
-    $.index = c + 1
-   console.log(`\n第${c+1}次发牌！`)
 
-           await xcfpqd();
-           await $.wait(1000);}
 
 
 
