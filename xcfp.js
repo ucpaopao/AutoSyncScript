@@ -2,24 +2,23 @@
 
 
 
-
-
-
 const $ = new Env('携程发牌');
 let xcfpurl = $.getdata('xcfpurl')
 let xcfphd = $.getdata('xcfphd')
 let xcfpbody = $.getdata('xcfpbody')
+let xcsjurl = $.getdata('xcsjurl')
+let xcsjhd = $.getdata('xcsjhd')
+let xcsjbody = $.getdata('xcsjbody')
 let user_id = ''
+let Y = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcfpck()
+    await xcsjck()
   } else {
-    for (let c = 0; c < 11; c++) {
-        $.index = c + 1
-       console.log(`\n第${c+1}次发牌！`)
+    await xcsj()
+    await $.wait(1000)
 
-               await xcfpqd()
-               await $.wait(1000);}
    
 }
 })()
@@ -38,7 +37,59 @@ $.log(xcfpbody)
     } 
   }
 
-//签到  
+  function xcsjck() {
+    if ($request.url.indexOf("getZzlUserCard") > -1) {
+     $.setdata($request.url,'xcsjurl')
+     $.log(xcsjurl)
+ $.setdata(JSON.stringify($request.headers),'xcsjhd')
+ $.log(xcsjhd)
+     $.setdata($request.body,'xcsjbody')
+ $.log(xcsjbody)
+    $.msg($.name,"","获取携程发牌数据body成功！")
+     } 
+   }
+
+
+//签到 
+function xcsj(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xcfpurl.match(/user_id=(\d+)/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xcsjurl,
+          headers : 
+  JSON.parse(xcsjhd),
+          body : xcsjbody
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.errCode == 0){
+          console.log('\n获取次数成功：'+result.chanceNum)
+    let Y = result.chanceNum
+    for (let c = 0; c < Y; c++) {
+      $.index = c + 1
+     console.log(`\n第${c+1}次发牌！`)
+  
+             await xcfpqd()
+             await $.wait(1000);}
+              
+  }else{
+          console.log('\n获取次数失败：'+result.chanceNum)
+  
+  }
+ 
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+
+
+
 function xcfpqd(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcfpurl.match(/user_id=(\d+)/)[1]
