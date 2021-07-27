@@ -8,9 +8,11 @@ https://m.ctrip.com/restapi  script-request-body  https://raw.githubusercontent.
 m.ctrip.com
 cron 30 0 * * *
 
-一、完成周周乐一项任务获得任务body
-二、进入周周乐获得抽卡数据body
-三、完成一次抽卡获得抽卡body
+一、完成周周乐一项任务获得任务ck
+二、进入周周乐获得抽卡数据ck
+三、完成一次抽卡获得抽卡ck
+四、完成一次签到获得签到ck
+五、完成一次会员签到获得ck
 */
 
 
@@ -159,9 +161,9 @@ function xcqdqd(timeout = 0) {
              
       const result = JSON.parse(data)
           if(result.errcode == 0){
-          console.log('\n签到成功：'+result.errmsg)
+          console.log('\n普通签到成功：'+result.errmsg)
   }else{
-          console.log('\n签到失败或已签到'+result.errmsg)
+          console.log('\n普通签到失败或已签到'+result.errmsg)
   }
           } catch (e) {
           } finally {
@@ -186,9 +188,9 @@ function xcqdqd(timeout = 0) {
              
       const result = JSON.parse(data)
           if(result.resultcode == 0){
-          console.log('\n签到成功：'+result.resultmessage)
+          console.log('\n会员签到成功：'+result.resultmessage)
   }else{
-          console.log('\n签到失败：'+result.resultmessage)
+          console.log('\n会员签到失败：'+result.resultmessage)
   }
           } catch (e) {
           } finally {
