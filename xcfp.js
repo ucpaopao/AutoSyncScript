@@ -14,7 +14,7 @@ let user_id = ''
   if (typeof $request !== "undefined") {
     await xcfpck()
   } else {
-    for (let c = 0; c < 8; c++) {
+    for (let c = 0; c < 11; c++) {
         $.index = c + 1
        console.log(`\n第${c+1}次发牌！`)
 
