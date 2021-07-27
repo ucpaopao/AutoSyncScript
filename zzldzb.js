@@ -96,7 +96,7 @@ function xc10s1(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   let url = {url : xcckspurl,
         headers : 
@@ -127,7 +127,7 @@ function xc10s2(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -157,7 +157,7 @@ function xc10s3(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -188,7 +188,7 @@ function xc10s4(timeout = 0) {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -220,7 +220,7 @@ appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -288,7 +288,7 @@ function xclq2(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -319,7 +319,7 @@ function xclq3(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
  // let url = {url : xcckspurl,
         headers : 
@@ -349,7 +349,7 @@ function xclq4(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -381,7 +381,7 @@ function xclq5(timeout = 0) {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
@@ -412,7 +412,7 @@ appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
