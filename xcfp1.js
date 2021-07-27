@@ -8,6 +8,7 @@ let xcsjurl = $.getdata('xcsjurl')
 let xcsjhd = $.getdata('xcsjhd')
 let xcsjbody = $.getdata('xcsjbody')
 let user_id = ''
+let Y = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcfpck()
