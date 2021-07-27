@@ -66,6 +66,7 @@ function xcsj(timeout = 0) {
   }else{
           console.log('\n获取次数失败：'+result.chanceNum)
   }
+  var Y = result.chanceNum
           } catch (e) {
           } finally {
             resolve()
@@ -74,7 +75,7 @@ function xcsj(timeout = 0) {
     })
   }
 
-  for (let c = 0; c < result.chanceNum; c++) {
+  for (let c = 0; c < $(Y); c++) {
     $.index = c + 1
    console.log(`\n第${c+1}次发牌！`)
 
