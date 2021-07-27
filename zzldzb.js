@@ -1,4 +1,12 @@
-
+/*
+20210727 Milo
+软件名：微信小程序携程：周周乐
+[rewrite_remote]
+https://m.ctrip.com/restapi  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/zzldzb.js
+[HITM]
+m.ctrip.com
+cron 30 0 * * *
+*/
 
 
 
