@@ -79,7 +79,7 @@ function xcsj(timeout = 0) {
     $.index = c + 1
    console.log(`\n第${c+1}次发牌！`)
 
-           await xcfpqd()
+           await xcfpqd();
            await $.wait(1000);}
 
 
