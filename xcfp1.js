@@ -68,9 +68,10 @@ function xcsj(timeout = 0) {
       const result = JSON.parse(data)
           if(result.errCode == 0){
           console.log('\n获取次数成功：'+result.chanceNum)
+              let Y = result.chanceNum
   }else{
           console.log('\n获取次数失败：'+result.chanceNum)
-    let Y = result.chanceNum
+  
   }
  
           } catch (e) {
