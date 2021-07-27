@@ -12,7 +12,7 @@ let xcckspbody = $.getdata('xcckspbody')
 let user_id = ''
 let cid = ''
 let auth = ''
-let appId = ''
+let appId1 = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcckspck()
@@ -96,12 +96,12 @@ function xc10s1(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":71,"taskId":407,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}} `
+        body : `{"projectId":14,"demandId":71,"taskId":407,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -127,12 +127,12 @@ function xc10s2(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":70,"taskId":406,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":70,"taskId":406,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -157,12 +157,12 @@ function xc10s3(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -188,12 +188,12 @@ function xc10s4(timeout = 0) {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":39,"taskId":316,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"projectId":14,"demandId":39,"taskId":316,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -220,12 +220,12 @@ appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":82,"taskId":435,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"projectId":14,"demandId":82,"taskId":435,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -288,12 +288,12 @@ function xclq2(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -319,12 +319,12 @@ function xclq3(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
  // let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":70,"taskId":406,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":70,"taskId":406,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -349,12 +349,12 @@ function xclq4(timeout = 0) {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -381,12 +381,12 @@ function xclq5(timeout = 0) {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":39,"taskId":316,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"projectId":14,"demandId":39,"taskId":316,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -412,12 +412,12 @@ appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId1":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":82,"taskId":435,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"projectId":14,"demandId":82,"taskId":435,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
