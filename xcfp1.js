@@ -70,7 +70,7 @@ function xcsj(timeout = 0) {
           if(result.errCode == 0){
           console.log('\n获取次数成功：'+result.chanceNum)
               let Y = result.chanceNum
-              console.log(`${Y}`)
+              console.log('Y')
   }else{
           console.log('\n获取次数失败：'+result.chanceNum)
   
