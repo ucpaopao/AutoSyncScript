@@ -61,9 +61,7 @@ $.log(xcckspbody)
    $.msg($.name,"","携程五次视频body成功！")
     } 
   }
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+
 //签到  
 function xcckspqd(timeout = 0) {
   return new Promise((resolve) => {
@@ -127,6 +125,9 @@ JSON.parse(xccksphd),
 function xc10s2(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -154,6 +155,9 @@ JSON.parse(xccksphd),
 function xc10s3(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -182,6 +186,9 @@ JSON.parse(xccksphd),
 function xc10s4(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -211,6 +218,9 @@ function xc10s4(timeout = 0) {
   function xc10s5(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -276,6 +286,9 @@ JSON.parse(xccksphd),
 function xclq2(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -304,6 +317,9 @@ JSON.parse(xccksphd),
 function xclq3(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
  // let url = {url : xcckspurl,
         headers : 
@@ -331,6 +347,9 @@ JSON.parse(xccksphd),
 function xclq4(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -360,6 +379,9 @@ JSON.parse(xccksphd),
 function xclq5(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
@@ -388,6 +410,9 @@ function xclq5(timeout = 0) {
   function xclq6(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
+appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
