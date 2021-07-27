@@ -9,11 +9,17 @@ const $ = new Env('携程丢骰子');
 let xcrollurl = $.getdata('xcrollurl')
 let xcrollhd = $.getdata('xcrollhd')
 let xcrollbody = $.getdata('xcrollbody')
+let getrollurl = $.getdata('getrollurl')
+let getrollhd = $.getdata('getrollhd')
+let getrollbody = $.getdata('getrollbody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcrollck()
+    await getrollck()
   } else {
+    await getroll();
+    await $.wait(1000);
     for (let c = 0; c < 3; c++) {
         $.index = c + 1
        console.log(`\n第${c+1}次丢骰子！`)
@@ -37,6 +43,18 @@ $.log(xcrollbody)
    $.msg($.name,"","获取携程丢骰子body成功！")
     } 
   }
+
+  function getrollck() {
+    if ($request.url.indexOf("enterAct") > -1) {
+     $.setdata($request.url,'getrollurl')
+     $.log(getrollurl)
+ $.setdata(JSON.stringify($request.headers),'getrollhd')
+ $.log(xcrollhd)
+     $.setdata($request.body,'getrollbody')
+ $.log(getrollbody)
+    $.msg($.name,"","获取携程丢骰子次数body成功！")
+     } 
+   }
 
 //签到  
 function xcrollqd(timeout = 0) {
@@ -66,6 +84,33 @@ JSON.parse(xcrollhd),
 }
 
 
+
+
+function getroll(timeout = 0) {
+  return new Promise((resolve) => {
+//user_id=xcrollurl.match(/user_id=(\d+)/)[1]
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+  let url = {url : getrollurl,
+        headers : 
+JSON.parse(getrollhd),
+        body : getrollbody
+}
+      $.post(url, async (err, resp, data) => {
+        try {
+           
+    const result = JSON.parse(data)
+        if(result.errcode == 0){
+        console.log('\n获取丢骰子次数成功：'+result.errmsg)
+}else{
+        console.log('\n获取丢骰子次数失败：'+result.errmsg)
+}
+        } catch (e) {
+        } finally {
+          resolve()
+        }
+    },timeout)
+  })
+}
 
 
 
