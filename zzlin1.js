@@ -1,4 +1,17 @@
 
+/*
+20210727 Milo
+软件名：微信小程序携程：周周乐
+[rewrite_remote]
+https://m.ctrip.com/restapi  script-request-body  https://raw.githubusercontent.com/milomoon/MyScripts/main/zzlin1.js
+[HITM]
+m.ctrip.com
+cron 30 0 * * *
+
+一、完成周周乐一项任务获得任务body
+二、进入周周乐获得抽卡数据body
+三、完成一次抽卡获得抽卡body
+*/
 
 
 
