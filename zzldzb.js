@@ -95,8 +95,8 @@ function xc10s1(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   let url = {url : xcckspurl,
         headers : 
@@ -126,8 +126,8 @@ function xc10s2(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -156,8 +156,8 @@ function xc10s3(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
   let url = {url : xcckspurl,
         headers : 
@@ -187,8 +187,8 @@ function xc10s4(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -219,8 +219,8 @@ appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xcckspurl,
           headers : 
@@ -287,8 +287,8 @@ function xclq2(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -318,8 +318,8 @@ function xclq3(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
  // let url = {url : xcckspurl,
         headers : 
@@ -348,8 +348,8 @@ function xclq4(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
@@ -380,8 +380,8 @@ function xclq5(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
@@ -411,8 +411,8 @@ appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
     return new Promise((resolve) => {
   //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"cid":"(\w+)"/)[1]
-appId = xcckspbody.match(/"cid":"(\w+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId = xcckspbody.match(/"appId":"(\w+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     //let url = {url : xcckspurl,
           headers : 
