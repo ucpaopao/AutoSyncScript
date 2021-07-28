@@ -11,8 +11,7 @@ let user_id = ''
   } else {
     await rollqd()
     await $.wait(1000);}
-   
-}
+
 })()
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
