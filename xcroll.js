@@ -9,21 +9,15 @@ const $ = new Env('携程丢骰子');
 let xcrollurl = $.getdata('xcrollurl')
 let xcrollhd = $.getdata('xcrollhd')
 let xcrollbody = $.getdata('xcrollbody')
-let rollurl = $.getdata('rollurl')
-let rollhd = $.getdata('rollhd')
-let rollbody = $.getdata('rollbody')
 let user_id = ''
 !(async () => {
   if (typeof $request !== "undefined") {
     await xcrollck()
-    await rollck()
   } else {
-    await roll();
-    await $.wait(1000);
-    
     for (let c = 0; c < 3; c++) {
         $.index = c + 1
        console.log(`\n第${c+1}次丢骰子！`)
+
                await xcrollqd()
                await $.wait(1000);}
    
@@ -44,50 +38,7 @@ $.log(xcrollbody)
     } 
   }
 
-  function rollck() {
-    if ($request.url.indexOf("enterAct") > -1) {
-     $.setdata($request.url,'rollurl')
-     $.log(rollurl)
- $.setdata(JSON.stringify($request.headers),'rollhd')
- $.log(rollhd)
-     $.setdata($request.body,'rollbody')
- $.log(rollbody)
-    $.msg($.name,"","获取携程丢骰子次数body成功！")
-     } 
-   }
-
 //签到  
-function roll(timeout = 0) {
-  return new Promise((resolve) => {
-//user_id=xcrollurl.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : rollurl,
-        headers : 
-JSON.parse(rollhd),
-        body : rollbody
-}
-      $.post(url, async (err, resp, data) => {
-        try {
-           
-    const result = JSON.parse(data)
-        if(result.errcode == 0){
-        console.log('\n获取丢骰子次数成功：'+result.errmsg)
-}else{
-        console.log('\n获取丢骰子次数失败：'+result.errmsg)
-}
-        } catch (e) {
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-}
-
-
-
-
-
-
 function xcrollqd(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcrollurl.match(/user_id=(\d+)/)[1]
@@ -113,9 +64,6 @@ JSON.parse(xcrollhd),
     },timeout)
   })
 }
-
-
-
 
 
 
