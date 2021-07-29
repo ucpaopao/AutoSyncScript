@@ -205,11 +205,14 @@ function xcqdqd(timeout = 0) {
 function xcckspqd(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcckspurl,
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+  //let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : xcckspbody
+        body : `{"projectId":14,"demandId":69,"taskId":405,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -397,11 +400,14 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 function xclq1(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
   //let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : xcckspbody
+        body : `{"projectId":14,"demandId":69,"taskId":405,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
