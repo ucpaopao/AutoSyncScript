@@ -34,8 +34,7 @@ function rollqd(timeout = 0) {
 //user_id=xcrollurl.match(/user_id=(\d+)/)[1]
 let url = {url : `https://m.ctrip.com/restapi/soa2/16575/enterAct`,
   //let url = {url : rollurl,
-        headers : `
-{
+        headers : `{
 'content-type' : `application/json`,
 'x-ctx-group' : `ctrip`,
 'Connection' : `keep-alive`,
