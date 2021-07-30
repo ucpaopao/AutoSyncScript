@@ -59,9 +59,9 @@ let Y = ''
 
                await xcckspqd()
                await $.wait(1000);}
-    for (let c = 0; c < 3; c++) {
-        $.index = c + 1
-       console.log(`\n第${c+1}次看视频！`)
+    for (let d = 0; d < 3; d++) {
+        $.index = d + 1
+       console.log(`\n第${d+1}次看视频！`)
 
                await xc10s6()
                await $.wait(1000);}
