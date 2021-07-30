@@ -76,6 +76,8 @@ let Y = ''
    await $.wait(1000);
    await xc10s5();
    await $.wait(1000);
+   await xc10s7();
+   await $.wait(1000);
    await xclq1();
    await $.wait(1000);
    await xclq2();
@@ -87,6 +89,8 @@ let Y = ''
    await xclq5();
    await $.wait(1000);
    await xclq6();
+   await $.wait(1000);
+   await xclq7();
    await $.wait(1000);
    await xcsj()
    await $.wait(1000)
@@ -441,7 +445,34 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   }
 
 
-
+  function xc10s7(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xccksp1url,
+          headers : 
+  JSON.parse(xccksp1hd),
+          body : `{"channelCode":"6733N074D4","taskId":40,"done":1,"status":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n历险记任务成功：'+result.message)
+  }else{
+          console.log('\n历险记任务失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
 
 
 
@@ -629,6 +660,37 @@ JSON.parse(xclq1hd),
       },timeout)
     })
   }
+
+
+
+
+  function xclq7(timeout = 0) {
+    return new Promise((resolve) => {
+ //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+ cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+ auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+ //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+   let url = {url : xclq1url,
+         headers : 
+ JSON.parse(xclq1hd),
+         body : `{"channelCode":"6733N074D4","taskId":40,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
+       $.post(url, async (err, resp, data) => {
+         try {
+            
+     const result = JSON.parse(data)
+         if(result.code == 200){
+         console.log('\n历险记抽奖领取成功：'+result.message)
+ }else{
+         console.log('\n历险记抽奖领取失败：'+result.message)
+ }
+         } catch (e) {
+         } finally {
+           resolve()
+         }
+     },timeout)
+   })
+ }
 
 
 
