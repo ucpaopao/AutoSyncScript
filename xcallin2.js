@@ -21,21 +21,24 @@ cron 30 0 * * *
 
 
 const $ = new Env('携程周周乐');
-let xcckspurl = $.getdata('xcckspurl')
-let xccksphd = $.getdata('xccksphd')
-let xcckspbody = $.getdata('xcckspbody')
-let xcfpurl = $.getdata('xcfpurl')
-let xcfphd = $.getdata('xcfphd')
-let xcfpbody = $.getdata('xcfpbody')
-let xcsjurl = $.getdata('xcsjurl')
-let xcsjhd = $.getdata('xcsjhd')
-let xcsjbody = $.getdata('xcsjbody')
-let xcqdurl = $.getdata('xcqdurl')
-let xcqdhd = $.getdata('xcqdhd')
-let xcqdbody = $.getdata('xcqdbody')
-let xchyqdurl = $.getdata('xchyqdurl')
-let xchyqdhd = $.getdata('xchyqdhd')
-let xchyqdbody = $.getdata('xchyqdbody')
+let xccksp1url = $.getdata('xccksp1url')
+let xccksp1hd = $.getdata('xccksp1hd')
+let xccksp1body = $.getdata('xccksp1body')
+let xcfp1url = $.getdata('xcfp1url')
+let xcfp1hd = $.getdata('xcfp1hd')
+let xcfp1body = $.getdata('xcfp1body')
+let xcsj1url = $.getdata('xcsj1url')
+let xcsj1hd = $.getdata('xcsj1hd')
+let xcsj1body = $.getdata('xcsj1body')
+let xcqd1url = $.getdata('xcqd1url')
+let xcqd1hd = $.getdata('xcqd1hd')
+let xcqd1body = $.getdata('xcqd1body')
+let xchyqd1url = $.getdata('xchyqd1url')
+let xchyqd1hd = $.getdata('xchyqd1hd')
+let xchyqd1body = $.getdata('xchyqd1body')
+let xclq1url = $.getdata('xclq1url')
+let xclq1hd = $.getdata('xclq1hd')
+let xclq1body = $.getdata('xclq1body')
 let user_id = ''
 let Y = ''
 !(async () => {
@@ -93,36 +96,36 @@ let Y = ''
 //获取ck
 function xcckspck() {
    if ($request.url.indexOf("todoTask") > -1) {
-    $.setdata($request.url,'xcckspurl')
-    $.log(xcckspurl)
-$.setdata(JSON.stringify($request.headers),'xccksphd')
-$.log(xccksphd)
-    $.setdata($request.body,'xcckspbody')
-$.log(xcckspbody)
+    $.setdata($request.url,'xccksp1url')
+    $.log(xccksp1url)
+$.setdata(JSON.stringify($request.headers),'xccksp1hd')
+$.log(xccksp1hd)
+    $.setdata($request.body,'xccksp1body')
+$.log(xccksp1body)
    $.msg($.name,"","携程五次视频body成功！")
     } 
   }
 
   function xcfpck() {
     if ($request.url.indexOf("sendZzlCardToUser") > -1) {
-     $.setdata($request.url,'xcfpurl')
-     $.log(xcfpurl)
- $.setdata(JSON.stringify($request.headers),'xcfphd')
- $.log(xcfphd)
-     $.setdata($request.body,'xcfpbody')
- $.log(xcfpbody)
+     $.setdata($request.url,'xcfp1url')
+     $.log(xcfp1url)
+ $.setdata(JSON.stringify($request.headers),'xcfp1hd')
+ $.log(xcfp1hd)
+     $.setdata($request.body,'xcfp1body')
+ $.log(xcfp1body)
     $.msg($.name,"","获取携程发牌body成功！")
      } 
    }
  
    function xcsjck() {
      if ($request.url.indexOf("getZzlUserCard") > -1) {
-      $.setdata($request.url,'xcsjurl')
-      $.log(xcsjurl)
-  $.setdata(JSON.stringify($request.headers),'xcsjhd')
-  $.log(xcsjhd)
-      $.setdata($request.body,'xcsjbody')
-  $.log(xcsjbody)
+      $.setdata($request.url,'xcsj1url')
+      $.log(xcsj1url)
+  $.setdata(JSON.stringify($request.headers),'xcsj1hd')
+  $.log(xcsj1hd)
+      $.setdata($request.body,'xcsj1body')
+  $.log(xcsj1body)
      $.msg($.name,"","获取携程发牌数据body成功！")
       } 
     }
@@ -130,12 +133,12 @@ $.log(xcckspbody)
 
     function xcqdck() {
         if ($request.url.indexOf("signin") > -1) {
-         $.setdata($request.url,'xcqdurl')
-         $.log(xcqdurl)
-     $.setdata(JSON.stringify($request.headers),'xcqdhd')
-     $.log(xcqdhd)
-         $.setdata($request.body,'xcqdbody')
-     $.log(xcqdbody)
+         $.setdata($request.url,'xcqd1url')
+         $.log(xcqd1url)
+     $.setdata(JSON.stringify($request.headers),'xcqd1hd')
+     $.log(xcqd1hd)
+         $.setdata($request.body,'xcqd1body')
+     $.log(xcqd1body)
         $.msg($.name,"","携程签到获取body成功！")
          }     
        }
@@ -143,12 +146,12 @@ $.log(xcckspbody)
 
        function xchyqdck() {
         if ($request.url.indexOf("saveDailyBonus") > -1) {
-         $.setdata($request.url,'xchyqdurl')
-         $.log(xchyqdurl)
-     $.setdata(JSON.stringify($request.headers),'xchyqdhd')
-     $.log(xchyqdhd)
-         $.setdata($request.body,'xchyqdbody')
-     $.log(xchyqdbody)
+         $.setdata($request.url,'xchyqd1url')
+         $.log(xchyqd1url)
+     $.setdata(JSON.stringify($request.headers),'xchyqd1hd')
+     $.log(xchyqd1hd)
+         $.setdata($request.body,'xchyqd1body')
+     $.log(xchyqd1body)
         $.msg($.name,"","获取携程会员签到body成功！")
          } 
        }
@@ -156,24 +159,24 @@ $.log(xcckspbody)
 
 function xclqck() {
         if ($request.url.indexOf("awardTask") > -1) {
-         $.setdata($request.url,'xclqurl')
-         $.log(xclqurl)
-     $.setdata(JSON.stringify($request.headers),'xclqhd')
-     $.log(xclqhd)
-         $.setdata($request.body,'xclqbody')
-     $.log(xclqbody)
+         $.setdata($request.url,'xclq1url')
+         $.log(xclq1url)
+     $.setdata(JSON.stringify($request.headers),'xclq1hd')
+     $.log(xclq1hd)
+         $.setdata($request.body,'xclq1body')
+     $.log(xclq1body)
         $.msg($.name,"","获取领奖body成功！")
          } 
        }
 //签到 
 function xcqdqd(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcqdurl.match(/user_id=(\d+)/)[1]
+  //user_id=xcqd1url.match(/user_id=(\d+)/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/16575/signin`,
-    let url = {url : xcqdurl,
+    let url = {url : xcqd1url,
           headers : 
-  JSON.parse(xcqdhd),
-          body : xcqdbody
+  JSON.parse(xcqd1hd),
+          body : xcqd1body
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -195,12 +198,12 @@ function xcqdqd(timeout = 0) {
 
   function xchyqd(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xchyqdurl.match(/user_id=(\d+)/)[1]
+  //user_id=xchyqd1url.match(/user_id=(\d+)/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xchyqdurl,
+    let url = {url : xchyqd1url,
           headers : 
-  JSON.parse(xchyqdhd),
-          body : xchyqdbody
+  JSON.parse(xchyqd1hd),
+          body : xchyqd1body
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -223,14 +226,14 @@ function xcqdqd(timeout = 0) {
 
 function xcckspqd(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcckspurl,
+  let url = {url : xccksp1url,
         headers : 
-JSON.parse(xccksphd),
+JSON.parse(xccksp1hd),
         body : `{"channelCode":"6733N074D4","taskId":36,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}`}
       $.post(url, async (err, resp, data) => {
         try {
@@ -253,14 +256,14 @@ JSON.parse(xccksphd),
 
 function xc10s1(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xcckspurl,
+  let url = {url : xccksp1url,
         headers : 
-JSON.parse(xccksphd),
+JSON.parse(xccksp1hd),
         body : `{"channelCode":"6733N074D4","taskId":44,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
@@ -284,14 +287,14 @@ JSON.parse(xccksphd),
 
 function xc10s2(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcckspurl,
+  let url = {url : xccksp1url,
         headers : 
-JSON.parse(xccksphd),
+JSON.parse(xccksp1hd),
         body : `{"channelCode":"6733N074D4","taskId":42,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
@@ -314,14 +317,14 @@ JSON.parse(xccksphd),
 
 function xc10s3(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcckspurl,
+  let url = {url : xccksp1url,
         headers : 
-JSON.parse(xccksphd),
+JSON.parse(xccksp1hd),
         body : `{"channelCode":"6733N074D4","taskId":45,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
@@ -345,14 +348,14 @@ JSON.parse(xccksphd),
 
 function xc10s4(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xcckspurl,
+    let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksphd),
+  JSON.parse(xccksp1hd),
           body : `{"channelCode":"6733N074D4","taskId":37,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -377,14 +380,14 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 
   function xc10s5(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xcckspurl,
+    let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksphd),
+  JSON.parse(xccksp1hd),
         body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -408,14 +411,14 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 
 function xc10s6(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xcckspurl,
+    let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksphd),
+  JSON.parse(xccksp1hd),
         body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -449,14 +452,14 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 //领取抽奖机会
 function xclq1(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"6733N074D4","taskId":36,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -479,14 +482,14 @@ JSON.parse(xclqhd),
 
 function xclq2(timeout = 0) {
    return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"6733N074D4","taskId":44,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -509,14 +512,14 @@ JSON.parse(xclqhd),
 
 function xclq3(timeout = 0) {
    return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"6733N074D4","taskId":42,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -538,14 +541,14 @@ JSON.parse(xclqhd),
 
 function xclq4(timeout = 0) {
    return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"6733N074D4","taskId":45,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -569,14 +572,14 @@ JSON.parse(xclqhd),
 
 function xclq5(timeout = 0) {
     return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -599,14 +602,14 @@ JSON.parse(xclqhd),
 
   function xclq6(timeout = 0) {
      return new Promise((resolve) => {
-//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
-cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
-auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
-appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+//user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclqurl,
+  let url = {url : xclq1url,
         headers : 
-JSON.parse(xclqhd),
+JSON.parse(xclq1hd),
         body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]} `}
       $.post(url, async (err, resp, data) => {
         try {
@@ -629,12 +632,12 @@ JSON.parse(xclqhd),
 
   function xcsj(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcfpurl.match(/user_id=(\d+)/)[1]
+  //user_id=xcfp1url.match(/user_id=(\d+)/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xcsjurl,
+    let url = {url : xcsj1url,
           headers : 
-  JSON.parse(xcsjhd),
-          body : xcsjbody
+  JSON.parse(xcsj1hd),
+          body : xcsj1body
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -668,12 +671,12 @@ JSON.parse(xclqhd),
 
 function xcfpqd(timeout = 0) {
   return new Promise((resolve) => {
-//user_id=xcfpurl.match(/user_id=(\d+)/)[1]
+//user_id=xcfp1url.match(/user_id=(\d+)/)[1]
 //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcfpurl,
+  let url = {url : xcfp1url,
         headers : 
-JSON.parse(xcfphd),
-        body : xcfpbody
+JSON.parse(xcfp1hd),
+        body : xcfp1body
 }
       $.post(url, async (err, resp, data) => {
         try {
