@@ -8,7 +8,7 @@ https://m.ctrip.com/restapi  script-request-body  https://raw.githubusercontent.
 m.ctrip.com
 cron 30 0 * * *
 
-一、完成周周乐一项任务获得任务ck
+一、完成周周乐看视频任务获得任务ck
 二、进入周周乐获得抽卡数据ck
 三、完成一次抽卡获得抽卡ck
 四、完成一次签到获得签到ck
@@ -55,6 +55,12 @@ let Y = ''
        console.log(`\n第${c+1}次看视频！`)
 
                await xcckspqd()
+               await $.wait(1000);}
+    for (let c = 0; c < 3; c++) {
+        $.index = c + 1
+       console.log(`\n第${c+1}次看视频！`)
+
+               await xc10s6()
                await $.wait(1000);}
    await xc10s1(); 
    await $.wait(1000);
@@ -146,6 +152,19 @@ $.log(xcckspbody)
         $.msg($.name,"","获取携程会员签到body成功！")
          } 
        }
+
+
+function xclqck() {
+        if ($request.url.indexOf("awardTask") > -1) {
+         $.setdata($request.url,'xclqurl')
+         $.log(xclqurl)
+     $.setdata(JSON.stringify($request.headers),'xclqhd')
+     $.log(xclqhd)
+         $.setdata($request.body,'xclqbody')
+     $.log(xclqbody)
+        $.msg($.name,"","获取领奖body成功！")
+         } 
+       }
 //签到 
 function xcqdqd(timeout = 0) {
     return new Promise((resolve) => {
@@ -213,15 +232,14 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
         headers : 
 JSON.parse(xccksphd),
         body : `{"channelCode":"6733N074D4","taskId":36,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
-}
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n观看成功：'+result.msg)
+        console.log('\n观看成功：'+result.message)
 }else{
-        console.log('\n观看失败：'+result.msg)
+        console.log('\n观看失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -250,9 +268,9 @@ JSON.parse(xccksphd),
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n拼团浏览成功：'+result.msg)
+        console.log('\n拼团浏览成功：'+result.message)
 }else{
-        console.log('\n拼团浏览失败：'+result.msg)
+        console.log('\n拼团浏览失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -281,9 +299,9 @@ JSON.parse(xccksphd),
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n积分浏览成功：'+result.msg)
+        console.log('\n积分浏览成功：'+result.message)
 }else{
-        console.log('\n积分浏览失败：'+result.msg)
+        console.log('\n积分浏览失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -311,9 +329,9 @@ JSON.parse(xccksphd),
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n暑期打工浏览成功：'+result.msg)
+        console.log('\n暑期打工浏览成功：'+result.message)
 }else{
-        console.log('\n暑期打工浏览失败：'+result.msg)
+        console.log('\n暑期打工浏览失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -342,9 +360,9 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n抽好物任务成功：'+result.msg)
+          console.log('\n订阅任务成功：'+result.message)
   }else{
-          console.log('\n抽好物任务失败：'+result.msg)
+          console.log('\n订阅任务失败：'+result.message)
   }
           } catch (e) {
           } finally {
@@ -367,16 +385,16 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
     let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":82,"taskId":435,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
           try {
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n游游一分钟任务成功：'+result.msg)
+          console.log('\n骰子周周乐任务成功：'+result.message)
   }else{
-          console.log('\n游游一分钟任务失败：'+result.msg)
+          console.log('\n骰子周周乐任务失败：'+result.message)
   }
           } catch (e) {
           } finally {
@@ -385,6 +403,38 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
       },timeout)
     })
   }
+
+
+
+function xc10s6(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
+auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
+appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xcckspurl,
+          headers : 
+  JSON.parse(xccksphd),
+        body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n骰子看视频任务成功：'+result.message)
+  }else{
+          console.log('\n骰子看视频任务失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
 
 
 
@@ -403,20 +453,19 @@ function xclq1(timeout = 0) {
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  //let url = {url : xcckspurl,
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
         headers : 
-JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":69,"taskId":405,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-}
+JSON.parse(xclqhd),
+        body : `{"channelCode":"6733N074D4","taskId":36,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n5次机会领取成功：'+result.msg)
+        console.log('\n5次机会领取成功：'+result.message)
 }else{
-        console.log('\n5次机会领取失败：'+result.msg)
+        console.log('\n5次机会领取失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -429,25 +478,24 @@ JSON.parse(xccksphd),
 
 
 function xclq2(timeout = 0) {
-  return new Promise((resolve) => {
+   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  //let url = {url : xcckspurl,
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
         headers : 
-JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":71,"taskId":407,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-}
+JSON.parse(xclqhd),
+        body : `{"channelCode":"6733N074D4","taskId":44,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n拼团浏览抽奖领取成功：'+result.msg)
+        console.log('\n拼团浏览抽奖领取成功：'+result.message)
 }else{
-        console.log('\n拼团浏览抽奖领取失败：'+result.msg)
+        console.log('\n拼团浏览抽奖领取失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -460,25 +508,24 @@ JSON.parse(xccksphd),
 
 
 function xclq3(timeout = 0) {
-  return new Promise((resolve) => {
+   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
- // let url = {url : xcckspurl,
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
         headers : 
-JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":70,"taskId":406,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-}
+JSON.parse(xclqhd),
+        body : `{"channelCode":"6733N074D4","taskId":42,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n积分浏览抽奖领取成功：'+result.msg)
+        console.log('\n积分浏览抽奖领取成功：'+result.message)
 }else{
-        console.log('\n积分浏览抽奖领取失败：'+result.msg)
+        console.log('\n积分浏览抽奖领取失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -490,25 +537,24 @@ JSON.parse(xccksphd),
 
 
 function xclq4(timeout = 0) {
-  return new Promise((resolve) => {
+   return new Promise((resolve) => {
 //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  //let url = {url : xcckspurl,
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
         headers : 
-JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-}
+JSON.parse(xclqhd),
+        body : `{"channelCode":"6733N074D4","taskId":45,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
       $.post(url, async (err, resp, data) => {
         try {
            
     const result = JSON.parse(data)
         if(result.code == 200){
-        console.log('\n暑期打工浏览奖励领取成功：'+result.msg)
+        console.log('\n暑期打工浏览奖励领取成功：'+result.message)
 }else{
-        console.log('\n暑期打工浏览奖励领取失败：'+result.msg)
+        console.log('\n暑期打工浏览奖励领取失败：'+result.message)
 }
         } catch (e) {
         } finally {
@@ -523,24 +569,23 @@ JSON.parse(xccksphd),
 
 function xclq5(timeout = 0) {
     return new Promise((resolve) => {
-  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-  let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-    //let url = {url : xcckspurl,
-          headers : 
-  JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":39,"taskId":316,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-  }
-        $.post(url, async (err, resp, data) => {
-          try {
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
+        headers : 
+JSON.parse(xclqhd),
+        body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
+      $.post(url, async (err, resp, data) => {
+        try {
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n抽好物奖励领取成功：'+result.msg)
+          console.log('\n骰子周周乐奖励领取成功：'+result.message)
   }else{
-          console.log('\n抽好物奖励领取失败：'+result.msg)
+          console.log('\n骰子周周乐奖励领取失败：'+result.message)
   }
           } catch (e) {
           } finally {
@@ -553,25 +598,24 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
 
 
   function xclq6(timeout = 0) {
-    return new Promise((resolve) => {
-  //user_id=xcckspurl.match(/user_id=(\d+)/)[1]
+     return new Promise((resolve) => {
+//user_id=xcckspurl.match(/user_id=(\d+)/)[1]
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-  let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-    //let url = {url : xcckspurl,
-          headers : 
-  JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":82,"taskId":435,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-  }
-        $.post(url, async (err, resp, data) => {
-          try {
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  let url = {url : xclqurl,
+        headers : 
+JSON.parse(xclqhd),
+        body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
+      $.post(url, async (err, resp, data) => {
+        try {
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n游游一分钟奖励领取成功：'+result.msg)
+          console.log('\n骰子看视频奖励领取成功：'+result.message)
   }else{
-          console.log('\n游游一分钟奖励领取失败：'+result.msg)
+          console.log('\n骰子看视频奖励领取失败：'+result.message)
   }
           } catch (e) {
           } finally {
