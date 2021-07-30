@@ -235,7 +235,8 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xccksp1url,
         headers : 
 JSON.parse(xccksp1hd),
-        body : `{"channelCode":"6733N074D4","taskId":36,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`}
+        body : `{"channelCode":"6733N074D4","taskId":36,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+    }
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -684,9 +685,9 @@ JSON.parse(xcfp1hd),
            
     const result = JSON.parse(data)
         if(result.errCode == 0){
-        console.log('\n发牌成功：'+result.activityId)
+        console.log('\n发牌成功：'+result.id)
 }else{
-        console.log('\n观看失败：'+result.activityId)
+        console.log('\n观看失败：'+result.id)
 }
         } catch (e) {
         } finally {
