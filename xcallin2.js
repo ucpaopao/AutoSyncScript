@@ -86,7 +86,7 @@ let Y = ''
   .finally(() => $.done())
 //获取ck
 function xcckspck() {
-   if ($request.url.indexOf("userTodoTask") > -1) {
+   if ($request.url.indexOf("todoTask") > -1) {
     $.setdata($request.url,'xcckspurl')
     $.log(xcckspurl)
 $.setdata(JSON.stringify($request.headers),'xccksphd')
