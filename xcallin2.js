@@ -208,8 +208,8 @@ function xcckspqd(timeout = 0) {
 cid = xcckspbody.match(/"cid":"(\d+)"/)[1]
 auth = xcckspbody.match(/"auth":"(\w+)"/)[1]
 appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
-let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  //let url = {url : xcckspurl,
+//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+  let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
         body : `{"channelCode":"6733N074D4","taskId":36,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
@@ -243,7 +243,7 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":71,"taskId":407,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `
+        body : `{"channelCode":"6733N074D4","taskId":44,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -274,7 +274,7 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":70,"taskId":406,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"channelCode":"6733N074D4","taskId":42,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -304,7 +304,7 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xcckspurl,
         headers : 
 JSON.parse(xccksphd),
-        body : `{"projectId":14,"demandId":74,"taskId":421,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+        body : `{"channelCode":"6733N074D4","taskId":45,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -335,7 +335,7 @@ appId1 = xcckspbody.match(/"appId","value":"(\w+)"/)[1]
     let url = {url : xcckspurl,
           headers : 
   JSON.parse(xccksphd),
-          body : `{"projectId":14,"demandId":39,"taskId":316,"isDone":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":37,"done":1,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"", "head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
           try {
