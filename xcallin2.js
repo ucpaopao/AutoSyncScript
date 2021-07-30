@@ -47,7 +47,8 @@ let Y = ''
     await xcckspck() 
     await xcfpck()     
     await xcsjck()     
-    await xchyqdck()   
+    await xchyqdck()
+    await xclqck()   
   } else {
     await xchyqd()
     await $.wait(1000);
@@ -460,8 +461,7 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"6733N074D4","taskId":36,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"6733N074D4","taskId":36,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -491,8 +491,7 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"6733N074D4","taskId":44,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"6733N074D4","taskId":44,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -522,8 +521,7 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"6733N074D4","taskId":42,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"6733N074D4","taskId":42,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -552,8 +550,7 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"6733N074D4","taskId":45,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"6733N074D4","taskId":45,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
         try {
            
@@ -584,8 +581,7 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
         try {
              
@@ -615,10 +611,8 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
-        body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `
-            }
+        body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2799D5EF882F1CF93877DF044483C1228","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}} `}
       $.post(url, async (err, resp, data) => {
-        
         try {
              
       const result = JSON.parse(data)
