@@ -43,18 +43,6 @@ let user_id = ''
 let Y = ''
 !(async () => {
   if (typeof $request !== "undefined") {
- //激活   
-    await jhxcckspqd()
-    await jhxc10s1()
-    await jhxc10s2()
-    await jhxc10s3()
-    await jhxc10s4()
-    await jhxc10s5()
-    await jhxc10s6()
-    await jhxc10s7()
-    await jhxc10s8()
-
- //签到  
     await xcqdck()     
     await xcckspck() 
     await xcfpck()     
@@ -62,7 +50,27 @@ let Y = ''
     await xchyqdck()
     await xclqck()   
   } else {
-    await xchyqd()
+     //激活   
+     await jhxcckspqd();
+     await $.wait(1000);
+     await jhxc10s1();
+     await $.wait(1000);
+     await jhxc10s2();
+     await $.wait(1000);
+     await jhxc10s3();
+     await $.wait(1000);
+     await jhxc10s4();
+     await $.wait(1000);
+     await jhxc10s5();
+     await $.wait(1000);
+     await jhxc10s6();
+     await $.wait(1000);
+     await jhxc10s7();
+     await $.wait(1000);
+     await jhxc10s8();
+     await $.wait(1000);
+  //签到
+    await xchyqd();
     await $.wait(1000);
     await xcqdqd();
     await $.wait(1000);
