@@ -43,6 +43,18 @@ let user_id = ''
 let Y = ''
 !(async () => {
   if (typeof $request !== "undefined") {
+ //激活   
+    await jhxcckspqd()
+    await jhxc10s1()
+    await jhxc10s2()
+    await jhxc10s3()
+    await jhxc10s4()
+    await jhxc10s5()
+    await jhxc10s6()
+    await jhxc10s7()
+    await jhxc10s8()
+
+ //签到  
     await xcqdck()     
     await xcckspck() 
     await xcfpck()     
@@ -181,6 +193,304 @@ function xclqck() {
         $.msg($.name,"","获取领奖body成功！")
          } 
        }
+
+
+
+
+
+
+//激活任务
+function jhxcckspqd(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xccksp1url,
+          headers : 
+  JSON.parse(xccksp1hd),
+          body : `{"channelCode":"6733N074D4","taskId":36,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+      }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n激活1成功：'+result.message)
+  }else{
+          console.log('\n激活1失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+
+//激活2
+  function jhxc10s1(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+    let url = {url : xccksp1url,
+          headers : 
+  JSON.parse(xccksp1hd),
+          body : `{"channelCode":"6733N074D4","taskId":44,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n激活拼团浏览成功：'+result.message)
+  }else{
+          console.log('\n激活拼团浏览失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+
+
+
+//激活3
+function jhxc10s2(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xccksp1url,
+          headers : 
+  JSON.parse(xccksp1hd),
+          body : `{"channelCode":"6733N074D4","taskId":42,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n激活积分浏览成功：'+result.message)
+  }else{
+          console.log('\n激活积分浏览失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+
+
+
+//激活4
+  function jhxc10s3(timeout = 0) {
+    return new Promise((resolve) => {
+  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+    let url = {url : xccksp1url,
+          headers : 
+  JSON.parse(xccksp1hd),
+          body : `{"channelCode":"6733N074D4","taskId":45,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+  }
+        $.post(url, async (err, resp, data) => {
+          try {
+             
+      const result = JSON.parse(data)
+          if(result.code == 200){
+          console.log('\n激活暑期打工浏览成功：'+result.message)
+  }else{
+          console.log('\n激活暑期打工浏览失败：'+result.message)
+  }
+          } catch (e) {
+          } finally {
+            resolve()
+          }
+      },timeout)
+    })
+  }
+  
+  
+  
+  function jhxc10s4(timeout = 0) {
+      return new Promise((resolve) => {
+    //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+    //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+      let url = {url : xccksp1url,
+            headers : 
+    JSON.parse(xccksp1hd),
+            body : `{"channelCode":"6733N074D4","taskId":37,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+    }
+          $.post(url, async (err, resp, data) => {
+            try {
+               
+        const result = JSON.parse(data)
+            if(result.code == 200){
+            console.log('\n激活订阅任务成功：'+result.message)
+    }else{
+            console.log('\n激活订阅任务失败：'+result.message)
+    }
+            } catch (e) {
+            } finally {
+              resolve()
+            }
+        },timeout)
+      })
+    }
+  
+  
+  
+  
+    function jhxc10s5(timeout = 0) {
+      return new Promise((resolve) => {
+    //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+    //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+      let url = {url : xccksp1url,
+            headers : 
+    JSON.parse(xccksp1hd),
+          body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+    }
+          $.post(url, async (err, resp, data) => {
+            try {
+               
+        const result = JSON.parse(data)
+            if(result.code == 200){
+            console.log('\n激活骰子周周乐任务成功：'+result.message)
+    }else{
+            console.log('\n激活骰子周周乐任务失败：'+result.message)
+    }
+            } catch (e) {
+            } finally {
+              resolve()
+            }
+        },timeout)
+      })
+    }
+  
+  
+  
+  function jhxc10s6(timeout = 0) {
+      return new Promise((resolve) => {
+    //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+    //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+      let url = {url : xccksp1url,
+            headers : 
+    JSON.parse(xccksp1hd),
+          body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+    }
+          $.post(url, async (err, resp, data) => {
+            try {
+               
+        const result = JSON.parse(data)
+            if(result.code == 200){
+            console.log('\n激活骰子看视频任务成功：'+result.message)
+    }else{
+            console.log('\n激活骰子看视频任务失败：'+result.message)
+    }
+            } catch (e) {
+            } finally {
+              resolve()
+            }
+        },timeout)
+      })
+    }
+  
+  
+    function jhxc10s7(timeout = 0) {
+      return new Promise((resolve) => {
+    //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+    //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+      let url = {url : xccksp1url,
+            headers : 
+    JSON.parse(xccksp1hd),
+            body : `{"channelCode":"6733N074D4","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+    }
+          $.post(url, async (err, resp, data) => {
+            try {
+               
+        const result = JSON.parse(data)
+            if(result.code == 200){
+            console.log('\n激活历险记任务成功：'+result.message)
+    }else{
+            console.log('\n激活历险记任务失败：'+result.message)
+    }
+            } catch (e) {
+            } finally {
+              resolve()
+            }
+        },timeout)
+      })
+    }
+  
+  
+  
+  
+    function jhxc10s8(timeout = 0) {
+      return new Promise((resolve) => {
+    //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+    //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
+      let url = {url : xccksp1url,
+            headers : 
+    JSON.parse(xccksp1hd),
+            body : `{"channelCode":"FK023GVTDY","taskId":60,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
+    }
+          $.post(url, async (err, resp, data) => {
+            try {
+               
+        const result = JSON.parse(data)
+            if(result.code == 200){
+            console.log('\n激活看视频得积分任务成功：'+result.message)
+    }else{
+            console.log('\n激活看视频得积分任务失败：'+result.message)
+    }
+            } catch (e) {
+            } finally {
+              resolve()
+            }
+        },timeout)
+      })
+    }
+
+
+
+
+
+
+
+
+
+
+
 //签到 
 function xcqdqd(timeout = 0) {
     return new Promise((resolve) => {
