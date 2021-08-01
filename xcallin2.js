@@ -218,22 +218,20 @@ function jhxcckspqd(timeout = 0) {
     //let url = {url : xccksp1url,
           headers : 
           {
-            'x-wx-openid' : `bd023991-e658-44c7-8532-703e9993acdf`,
-            'x-ctx-group' : `ctrip`,
-            'Connection' : `keep-alive`,
-            'Accept-Encoding' : `gzip,compress,br,deflate`,
-            'Referer' : `https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html`,
-            'x-ctx-locale' : `zh-CN`,
-            'Content-Type' : `application/json`,
-            'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x1800092c) NetType/WIFI Language/zh_CN`,
-            'x-ctx-region' : `CN`,
-            'Cookie' : `Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;`,
-            'Host' : `m.ctrip.com`,
-            'x-ctx-currency' : `CNY`,
-            'duid' : `u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0`,
-            'Accept-Language' : `zh-cn`,
-            'Accept' : `*/*`
-            },
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"6733N074D4","taskId":36,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2403C811628010181D2BC79A08D18C3F4","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
       }
         $.post(url, async (err, resp, data) => {
@@ -264,7 +262,21 @@ function jhxcckspqd(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
     let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksp1hd),
+  {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"6733N074D4","taskId":44,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -297,7 +309,21 @@ function jhxc10s2(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksp1hd),
+  {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"6733N074D4","taskId":42,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -329,7 +355,21 @@ function jhxc10s2(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
     let url = {url : xccksp1url,
           headers : 
-  JSON.parse(xccksp1hd),
+  {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"6733N074D4","taskId":45,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
   }
         $.post(url, async (err, resp, data) => {
@@ -360,7 +400,21 @@ function jhxc10s2(timeout = 0) {
     //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
       let url = {url : xccksp1url,
             headers : 
-    JSON.parse(xccksp1hd),
+    {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
             body : `{"channelCode":"6733N074D4","taskId":37,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
     }
           $.post(url, async (err, resp, data) => {
@@ -392,7 +446,21 @@ function jhxc10s2(timeout = 0) {
     //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
       let url = {url : xccksp1url,
             headers : 
-    JSON.parse(xccksp1hd),
+    {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
     }
           $.post(url, async (err, resp, data) => {
@@ -423,7 +491,21 @@ function jhxc10s2(timeout = 0) {
     //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
       let url = {url : xccksp1url,
             headers : 
-    JSON.parse(xccksp1hd),
+    {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
           body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
     }
           $.post(url, async (err, resp, data) => {
@@ -453,7 +535,21 @@ function jhxc10s2(timeout = 0) {
     //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
       let url = {url : xccksp1url,
             headers : 
-    JSON.parse(xccksp1hd),
+    {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
             body : `{"channelCode":"6733N074D4","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
     }
           $.post(url, async (err, resp, data) => {
@@ -485,7 +581,21 @@ function jhxc10s2(timeout = 0) {
     //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
       let url = {url : xccksp1url,
             headers : 
-    JSON.parse(xccksp1hd),
+    {
+    "Accept-Encoding": "gzip,compress,br,deflate",
+    "Connection": "keep-alive",
+    "content-type": "application/json",
+    "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;",
+    "duid": "u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0",
+    "Host": "m.ctrip.com",
+    "Referer": "https://servicewechat.com/wx0e6ed4f51db9d078/468/page-frame.html",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/4G Language/zh_CN",
+    "x-ctx-currency": "CNY",
+    "x-ctx-group": "ctrip",
+    "x-ctx-locale": "zh-CN",
+    "x-ctx-region": "CN",
+    "x-wx-openid": "bd023991-e658-44c7-8532-703e9993acdf"
+},
             body : `{"channelCode":"FK023GVTDY","taskId":60,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}  `
     }
           $.post(url, async (err, resp, data) => {
