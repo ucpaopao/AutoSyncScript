@@ -67,7 +67,7 @@ let url = {url : `https://m.ctrip.com/restapi/soa2/20794/gatherCoin?_fxpcqlnired
             'Accept-Language' : `zh-cn`,
             'Accept' : `*/*`
             },
-        body : {"moduleId":1,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
+        body : `{"moduleId":1,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -106,7 +106,7 @@ function xcmhdqd1(timeout = 0) {
                     'Accept-Language' : `zh-cn`,
                     'Accept' : `*/*`
                     },
-                body : {"moduleId":2,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
+                body : `{"moduleId":2,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
         }
               $.post(url, async (err, resp, data) => {
                 try {
@@ -145,7 +145,7 @@ function xcmhdqd1(timeout = 0) {
                     'Accept-Language' : `zh-cn`,
                     'Accept' : `*/*`
                     },
-                body : {"moduleId":3,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}
+                body : `{"moduleId":3,"head":{"cid":"09031168115742014444","ctok":"","cver":"1.0","lang":"01","sid":"8888","syscode":"09","xsid":"","extension":[]}}`
         }
               $.post(url, async (err, resp, data) => {
                 try {
