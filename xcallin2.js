@@ -238,10 +238,10 @@ function jhxcckspqd(timeout = 0) {
           try {
              
       const result = JSON.parse(data)
-          if(result.code == 200){
-          console.log('\n激活1成功：'+result.message)
+          if(result.ResponseStatus.Ack == 'Success'){
+          console.log('\n激活1成功：'+result.ResponseStatus.Extension[1].Id)
   }else{
-          console.log('\n激活1失败：'+result.message)
+          console.log('\n激活1失败：'+result.ResponseStatus.Ack)
   }
           } catch (e) {
           } finally {
