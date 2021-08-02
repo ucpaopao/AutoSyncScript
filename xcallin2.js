@@ -218,7 +218,6 @@ function jhxcckspqd(timeout = 0) {
     let url = {
           url : xccksp1url,
           headers : {
-              "content-type": "application/json",
               "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;duid: u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0"
     },
           body : `{"channelCode":"6733N074D4","taskId":36,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
