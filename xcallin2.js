@@ -211,7 +211,7 @@ function xclqck() {
 function jhxcckspqd(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
-  cookie = xccksp1hd.match(/Cookie:(\w+)/)[1]
+  cookie = xccksp1hd.match(/Cookie:(\w+);/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
