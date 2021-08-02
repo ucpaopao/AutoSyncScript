@@ -217,8 +217,11 @@ function jhxcckspqd(timeout = 0) {
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
     let url = {
           url : xccksp1url,
-          headers : JSON.parse(xccksp1hd),
-          body : `{"channelCode":"6733N074D4","taskId":36,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          headers : {
+              "content-type": "application/json",
+              "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0"
+    },
+          body : `{"channelCode":"6733N074D4","taskId":36,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
       }
         $.post(url, async (err, resp, data) => {
           try {
