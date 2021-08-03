@@ -257,7 +257,7 @@ function jhxcckspqd(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":44,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":44,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -293,7 +293,7 @@ function jhxc10s2(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":42,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":42,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -328,7 +328,7 @@ function jhxc10s2(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":45,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":45,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -362,7 +362,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":37,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":37,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -397,7 +397,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -431,7 +431,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -464,7 +464,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":40,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -499,7 +499,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"FK023GVTDY","taskId":60,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"FK023GVTDY","taskId":60,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
