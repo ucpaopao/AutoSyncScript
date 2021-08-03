@@ -214,6 +214,7 @@ function jhxcckspqd(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
   cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -223,7 +224,7 @@ function jhxcckspqd(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":36,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":36,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
       };
         $.post(url, async (err, resp, data) => {
           try {
@@ -248,6 +249,7 @@ function jhxcckspqd(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
   cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -257,7 +259,7 @@ function jhxcckspqd(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":44,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":44,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -284,6 +286,7 @@ function jhxc10s2(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
   cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -293,7 +296,7 @@ function jhxc10s2(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":42,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":42,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -319,6 +322,7 @@ function jhxc10s2(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
   cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -328,7 +332,7 @@ function jhxc10s2(timeout = 0) {
             "Content-Type": "application/json",
             "Cookie": "${cookie}"
     },
-          body : `{"channelCode":"6733N074D4","taskId":45,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":45,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -353,6 +357,7 @@ function jhxc10s2(timeout = 0) {
       return new Promise((resolve) => {
     //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
     cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+    cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
     auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
     appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -362,7 +367,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":37,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":37,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -388,6 +393,7 @@ function jhxc10s2(timeout = 0) {
       return new Promise((resolve) => {
     //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
     cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+    cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
     auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
     appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -397,7 +403,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"69G8EV4BX3","taskId":40,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -422,6 +428,7 @@ function jhxc10s2(timeout = 0) {
       return new Promise((resolve) => {
     //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
     cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+    cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
     auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
     appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -431,7 +438,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"69G8EV4BX3","taskId":59,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":59,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -455,6 +462,7 @@ function jhxc10s2(timeout = 0) {
       return new Promise((resolve) => {
     //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
     cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+    cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
     auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
     appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -464,7 +472,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":40,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":40,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
@@ -490,6 +498,7 @@ function jhxc10s2(timeout = 0) {
       return new Promise((resolve) => {
     //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
     cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+    cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
     auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
     appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
@@ -499,7 +508,7 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"FK023GVTDY","taskId":60,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"FK023GVTDY","taskId":60,"done":0,"status":0,"allianceid":"1300831","sid":"6584072","ouid":"\"\"","sourceid":"55552689","pushcode":"\"\"","innersid":"\"32\"","innerouid":"\"\"","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
