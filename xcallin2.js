@@ -204,26 +204,27 @@ function xclqck() {
 
 
 
+
 console.log(`${xccksp1url}`)
 console.log(`${xccksp1hd}`)
 console.log(`${xccksp1body}`)
-
 
 //激活任务
 function jhxcckspqd(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
-  //cookie = xccksp1hd.match(/Cookie:(\w+);/)[1]
+  cookie = xccksp1hd.match(/"Cookie":"(\w+)",/)[1]
   auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
   appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
   //let url = {url : `https://m.ctrip.com/restapi/soa2/22598/todoTask`,
     let url = {
           url : xccksp1url,
           headers : {
-              "Cookie": "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;duid: u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0"
+            "Content-Type": "application/json",
+            "Cookie": "${cookie}"
     },
           body : `{"channelCode":"6733N074D4","taskId":36,"head":{"auth":"${auth}","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
-      }
+      };
         $.post(url, async (err, resp, data) => {
           try {
              
@@ -241,7 +242,7 @@ function jhxcckspqd(timeout = 0) {
     })
   }
 
-
+  
 //激活2
   function jhxc10s1(timeout = 0) {
     return new Promise((resolve) => {
