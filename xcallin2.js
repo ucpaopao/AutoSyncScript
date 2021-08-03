@@ -124,6 +124,8 @@ let Y = ''
    await $.wait(1000);
    await xclq8();
    await $.wait(1000);
+   await xclq9();
+   await $.wait(1000);
    await xcsj()
    await $.wait(1000)
 }
@@ -1074,15 +1076,15 @@ JSON.parse(xclq1hd),
    let url = {url : xclq1url,
          headers : 
  JSON.parse(xclq1hd),
-         body : `{"channelCode":"6733N074D4","taskId":40,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `}
+         body : `{"channelCode":"6733N074D4","taskId":79,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `}
        $.post(url, async (err, resp, data) => {
          try {
             
      const result = JSON.parse(data)
          if(result.code == 200){
-         console.log('\n历险记抽奖领取成功：'+result.message)
+         console.log('\n周乐大浪淘沙奖励领取成功：'+result.message)
  }else{
-         console.log('\n历险记抽奖领取失败：'+result.message)
+         console.log('\n周乐大浪淘沙奖励领取失败：'+result.message)
  }
          } catch (e) {
          } finally {
@@ -1121,6 +1123,37 @@ JSON.parse(xclq1hd),
      },timeout)
    })
  }
+
+
+ function xclq9(timeout = 0) {
+    return new Promise((resolve) => {
+ //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+ cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+ auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+ //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+   let url = {url : xclq1url,
+         headers : 
+ JSON.parse(xclq1hd),
+         body : `{"channelCode":"69G8EV4BX3","taskId":79,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `}
+       $.post(url, async (err, resp, data) => {
+         try {
+            
+     const result = JSON.parse(data)
+         if(result.code == 200){
+         console.log('\n骰子大浪淘沙领取成功：'+result.message)
+ }else{
+         console.log('\n骰子大浪淘沙领取失败：'+result.message)
+ }
+         } catch (e) {
+         } finally {
+           resolve()
+         }
+     },timeout)
+   })
+ }
+
+
 
 
 
@@ -1179,7 +1212,7 @@ JSON.parse(xcfp1hd),
         if(result.errCode == 0){
         console.log('\n发牌成功：'+result.id)
 }else{
-        console.log('\n观看失败：'+result.id)
+        console.log('\n任务失败：'+result.id)
 }
         } catch (e) {
         } finally {
