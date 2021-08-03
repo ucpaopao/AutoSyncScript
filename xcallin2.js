@@ -49,8 +49,7 @@ let Y = ''
     await xcckspck() 
     await xcfpck()     
     await xcsjck()     
-    
-    //await xchyqdck()
+    await xchyqdck()
     await xclqck()   
   } else {
      //激活   
@@ -372,16 +371,16 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":37,"done":0,"status":0,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":79,"done":0,"status":0,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
                
         const result = JSON.parse(data)
             if(result.code == 200){
-            console.log('\n激活订阅任务成功：'+result.message)
+            console.log('\n激活骰子大浪淘沙任务成功：'+result.message)
     }else{
-            console.log('\n激活订阅任务失败：'+result.message)
+            console.log('\n激活骰子大浪淘沙任务失败：'+result.message)
     }
             } catch (e) {
             } finally {
@@ -477,16 +476,16 @@ function jhxc10s2(timeout = 0) {
               "Content-Type": "application/json",
               "Cookie": "${cookie}"
       },
-          body : `{"channelCode":"6733N074D4","taskId":40,"done":0,"status":0,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":79,"done":0,"status":0,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
     }
           $.post(url, async (err, resp, data) => {
             try {
                
         const result = JSON.parse(data)
             if(result.code == 200){
-            console.log('\n激活历险记任务成功：'+result.message)
+            console.log('\n周乐大浪淘沙任务成功：'+result.message)
     }else{
-            console.log('\n激活历险记任务失败：'+result.message)
+            console.log('\n周乐大浪淘沙任务失败：'+result.message)
     }
             } catch (e) {
             } finally {
@@ -731,16 +730,16 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     let url = {url : xccksp1url,
           headers : 
   JSON.parse(xccksp1hd),
-          body : `{"channelCode":"6733N074D4","taskId":37,"done":1,"status":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"69G8EV4BX3","taskId":79,"done":1,"status":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n订阅任务成功：'+result.message)
+          console.log('\n骰子大浪淘沙任务成功：'+result.message)
   }else{
-          console.log('\n订阅任务失败：'+result.message)
+          console.log('\n骰子大浪淘沙任务失败：'+result.message)
   }
           } catch (e) {
           } finally {
@@ -824,16 +823,16 @@ appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
     let url = {url : xccksp1url,
           headers : 
   JSON.parse(xccksp1hd),
-          body : `{"channelCode":"6733N074D4","taskId":40,"done":1,"status":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
+          body : `{"channelCode":"6733N074D4","taskId":79,"done":1,"status":1,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
              
       const result = JSON.parse(data)
           if(result.code == 200){
-          console.log('\n历险记任务成功：'+result.message)
+          console.log('\n周乐大浪淘沙任务成功：'+result.message)
   }else{
-          console.log('\n历险记任务失败：'+result.message)
+          console.log('\n周乐大浪淘沙任务失败：'+result.message)
   }
           } catch (e) {
           } finally {
