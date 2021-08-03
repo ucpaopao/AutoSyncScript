@@ -33,9 +33,11 @@ let xcsj1body = $.getdata('xcsj1body')
 let xcqd1url = $.getdata('xcqd1url')
 let xcqd1hd = $.getdata('xcqd1hd')
 let xcqd1body = $.getdata('xcqd1body')
+/*
 let xchyqd1url = $.getdata('xchyqd1url')
 let xchyqd1hd = $.getdata('xchyqd1hd')
 let xchyqd1body = $.getdata('xchyqd1body')
+*/
 let xclq1url = $.getdata('xclq1url')
 let xclq1hd = $.getdata('xclq1hd')
 let xclq1body = $.getdata('xclq1body')
@@ -70,8 +72,10 @@ let Y = ''
      await jhxc10s8();
      await $.wait(1000);
   //签到
+/*
     await xchyqd();
     await $.wait(1000);
+*/
     await xcqdqd();
     await $.wait(1000);
     for (let c = 0; c < 5; c++) {
@@ -176,7 +180,7 @@ $.log(xccksp1body)
          }     
        }
 
-
+/*
        function xchyqdck() {
         if ($request.url.indexOf("saveDailyBonus") > -1) {
          $.setdata($request.url,'xchyqd1url')
@@ -188,7 +192,7 @@ $.log(xccksp1body)
         $.msg($.name,"","获取携程会员签到body成功！")
          } 
        }
-
+*/
 
 function xclqck() {
         if ($request.url.indexOf("awardTask") > -1) {
@@ -564,7 +568,7 @@ function xcqdqd(timeout = 0) {
     })
   }
 
-
+/*
   function xchyqd(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xchyqd1url.match(/user_id=(\d+)/)[1]
@@ -590,7 +594,7 @@ function xcqdqd(timeout = 0) {
       },timeout)
     })
   }
-  
+  */
 
 
 function xcckspqd(timeout = 0) {
