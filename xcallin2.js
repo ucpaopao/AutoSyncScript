@@ -49,7 +49,8 @@ let Y = ''
     await xcckspck() 
     await xcfpck()     
     await xcsjck()     
-    await xchyqdck()
+    
+    //await xchyqdck()
     await xclqck()   
   } else {
      //激活   
