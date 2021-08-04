@@ -5,7 +5,7 @@ const KEY_homeheader = 'chavy_home_header_mcdd'
 
 const signinfo = {}
 let VAL_homeurl = chavy.getdata(KEY_homeurl)
-let VAL_homeheader = chavy.getdata(KEY_homeheader)
+let VAL_homeheader = {"Origin":"https://activity.m.ddxq.mobi","Cookie":"DDXQSESSID=09ba08ded91e7fe25d30b827271d5fd6","Connection":"keep-alive","Accept":"*/*","Referer":"https://activity.m.ddxq.mobi/","Host":"maicai.api.ddxq.mobi","User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 xzone/9.32.1 station_id/5fa39bcd57597600010e795b","Accept-Encoding":"gzip, deflate, br","Accept-Language":"zh-cn"}
 
 ;(exec = async () => {
   chavy.log(` ${cookieName} 开始签到`)
@@ -52,7 +52,7 @@ function signapp() {
     url.headers['Referer'] = 'https://activity.m.ddxq.mobi/'
     url.headers['Content-Length'] = '129'
     url.headers['Accept-Language'] = 'zh-cn'
-    url.body = VAL_homeurl.split('?')[1]
+    url.body = `{api_version=9.7.3&app_version=1.0.0&app_client_id=3&station_id=5fa39bcd57597600010e795b&native_version=9.32.1&city_number=1117&latitude=23.009539&longitude=113.73065&_=1628060205078}`
     chavy.post(url, (error, response, data) => {
       try {
         signinfo.signapp = JSON.parse(data)
@@ -69,7 +69,7 @@ function signapp() {
 
 function getlottery() {
   return new Promise((resolve, reject) => {
-    const getlotteryurl = `https://maicai.api.ddxq.mobi/lottery/index?${VAL_homeurl.split('?')[1]}&event_id=5dbacee44df3e3ed628ce721`
+    const getlotteryurl = `https://maicai.api.ddxq.mobi/lottery/index?api_version=9.7.3&app_version=1.0.0&app_client_id=3&station_id=5fa39bcd57597600010e795b&native_version=9.32.1&city_number=1117&latitude=23.009539&longitude=113.73065&_=1628060205078&event_id=5dbacee44df3e3ed628ce721`
     const url = { url: getlotteryurl, headers: JSON.parse(VAL_homeheader) }
     url.headers['Origin'] = 'https://activity.m.ddxq.mobi'
     url.headers['Connection'] = 'keep-alive'
