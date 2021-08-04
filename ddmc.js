@@ -36,9 +36,9 @@ function getinfo() {
     })
   })
 }
-console.log(`${VAL_homeurl}`)
-console.log(`${VAL_homeheader}`)
-console.log(`${VAL_homeurl.split('?')[1]}`)
+//console.log(`${VAL_homeurl}`)
+//console.log(`${VAL_homeheader}`)
+//console.log(`${VAL_homeurl.split('?')[1]}`)
 
 function signapp() {
   return new Promise((resolve, reject) => {
