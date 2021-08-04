@@ -24,12 +24,14 @@ let user_id = ''
   if (typeof $request !== "undefined") {
     await xcmhdck()
   } else {
-    await xcmhdqd();
-    await $.wait(1000);
-    await xcmhdqd1();
-    await $.wait(1000);
-    await xcmhdqd2();
-    await $.wait(1000);
+    await Promise.all([ 
+      xcmhdqd(), 
+      xcmhdqd1(),
+      xcmhdqd2() 
+    ]);
+
+
+   
 }
 })()
   .catch((e) => $.logErr(e))
