@@ -21,7 +21,7 @@ let VAL_homeheader = {"Origin":"https://activity.m.ddxq.mobi","Cookie":"DDXQSESS
 
 function getinfo() {
   return new Promise((resolve, reject) => {
-    const url = { url: VAL_homeurl, headers: JSON.parse(VAL_homeheader) }
+    const url = { url: VAL_homeurl, headers: VAL_homeheader }
     chavy.get(url, (error, response, data) => {
       try {
         signinfo.info = JSON.parse(data)
@@ -42,7 +42,7 @@ console.log(`${VAL_homeurl.split('?')[1]}`)
 
 function signapp() {
   return new Promise((resolve, reject) => {
-    const url = { url: `https://ddxq.mobi/api/v2/user/signin/`, headers: JSON.parse(VAL_homeheader) }
+    const url = { url: `https://ddxq.mobi/api/v2/user/signin/`, headers: VAL_homeheader }
     url.headers['Accept'] = '*/*'
     url.headers['Origin'] = 'https://activity.m.ddxq.mobi'
     url.headers['Accept-Encoding'] = 'gzip, deflate, br'
@@ -70,7 +70,7 @@ function signapp() {
 function getlottery() {
   return new Promise((resolve, reject) => {
     const getlotteryurl = `https://maicai.api.ddxq.mobi/lottery/index?api_version=9.7.3&app_version=1.0.0&app_client_id=3&station_id=5fa39bcd57597600010e795b&native_version=9.32.1&city_number=1117&latitude=23.009539&longitude=113.73065&_=1628060205078&event_id=5dbacee44df3e3ed628ce721`
-    const url = { url: getlotteryurl, headers: JSON.parse(VAL_homeheader) }
+    const url = { url: getlotteryurl, headers: VAL_homeheader }
     url.headers['Origin'] = 'https://activity.m.ddxq.mobi'
     url.headers['Connection'] = 'keep-alive'
     url.headers['Accept'] = '*/*'
@@ -96,8 +96,8 @@ function getlottery() {
 function lotteryapp(cnt) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const lotteryappurl = `https://maicai.api.ddxq.mobi/lottery/draw?${VAL_homeurl.split('?')[1]}&event_id=5dbacee44df3e3ed628ce721`
-      const url = { url: lotteryappurl, headers: JSON.parse(VAL_homeheader) }
+      const lotteryappurl = `https://maicai.api.ddxq.mobi/lottery/draw?api_version=9.7.3&app_version=1.0.0&app_client_id=3&station_id=5fa39bcd57597600010e795b&native_version=9.32.1&city_number=1117&latitude=23.009539&longitude=113.73065&_=1628060205078&event_id=5dbacee44df3e3ed628ce721`
+      const url = { url: lotteryappurl, headers: VAL_homeheader }
       url.headers['Origin'] = 'https://activity.m.ddxq.mobi'
       url.headers['Connection'] = 'keep-alive'
       url.headers['Accept'] = '*/*'
@@ -124,8 +124,8 @@ function lotteryapp(cnt) {
 function browseapp() {
   return new Promise((resolve, reject) => {
     const browseappurl = `https://maicai.api.ddxq.mobi/point/completeTask`
-    const url = { url: browseappurl, headers: JSON.parse(VAL_homeheader) }
-    url.body = `${VAL_homeurl.split('?')[1]}&station_id=5500fe01916edfe0738b4e43&task_type=21`
+    const url = { url: browseappurl, headers: VAL_homeheader }
+    url.body = `api_version=9.7.3&app_version=1.0.0&app_client_id=3&station_id=5fa39bcd57597600010e795b&native_version=9.32.1&city_number=1117&latitude=23.009539&longitude=113.73065&_=1628060205078&station_id=5500fe01916edfe0738b4e43&task_type=21`
     url.headers['Accept'] = '*/*'
     url.headers['Origin'] = 'https://maicai.m.ddxq.mobi'
     url.headers['Accept-Encoding'] = 'gzip, deflate, br'
