@@ -41,7 +41,9 @@ $.log(keepjsbody)
    $.msg($.name,"","keep浇水获取headers成功！")
     } 
   }
-
+console.log(`${keepjsurl}`)
+console.log(`${keepjshd}`)
+console.log(`${keepjsbody}`)
 //签到  
 function keepjsqd(timeout = 0) {
   return new Promise((resolve) => {
