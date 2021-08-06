@@ -40,9 +40,9 @@ $.log(zqdkbody)
    $.msg($.name,"","早起打卡签到获取headers成功！")
     } 
   }
-console.log(`${zqdkurl}`)
-console.log(`${zqdkhd}`)
-console.log(`${zqdkbody}`)
+//console.log(`${zqdkurl}`)
+//console.log(`${zqdkhd}`)
+//console.log(`${zqdkbody}`)
 
 //签到  
 function zqdkqd(timeout = 0) {
