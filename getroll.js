@@ -34,19 +34,8 @@ function rollqd(timeout = 0) {
 //user_id=xcrollurl.match(/user_id=(\d+)/)[1]
 let url = {url : `https://m.ctrip.com/restapi/soa2/16575/enterAct`,
   //let url = {url : rollurl,
-        headers : {'content-type' : `application/json`,
-                    'x-ctx-group' : `ctrip`,
-                    'Connection' : `keep-alive`,
-                    'Accept-Encoding' : `gzip,compress,br,deflate`,
-                    'x-ctx-locale' : `zh-CN`,
-                    'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.9(0x18000929) NetType/WIFI Language/zh_CN`,
-                    'x-ctx-region' : `CN`,
-                    'Cookie' : `Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;`,
-                    'Host' : `m.ctrip.com`,
-                    'x-ctx-currency' : `CNY`,
-                    'duid' : `u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0`,
-                    'x-wx-openid' : `bd023991-e658-44c7-8532-703e9993acdf`,
-                    'Referer' : `https://servicewechat.com/wx0e6ed4f51db9d078/467/page-frame.html`},
+        headers : {"content-type" : "application/json",
+                    "Cookie" : "Union=OUID=&AllianceID=1300831&SID=6584072&SourceID=55552689;DUID=u=9A0BE19C23CF030627FA083AD237AF01A343D0028037A8BD3D57CF8F7BFB45D0&v=0;"},
         body : `{"openId":"bd023991-e658-44c7-8532-703e9993acdf","nickName":"神秘用户","headImg":"https://images3.c-ctrip.com/marketing/2020/08/xcx_energy/default.png","head":{"cid":"09301091210253315338","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"45655D8EC6D066D16B75FD69F2DA95D2E0A5A3D76B04B261F209ABDF697C2290","sauth":"","extension":[{"name":"appId","value":"wx0e6ed4f51db9d078"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
