@@ -211,9 +211,15 @@ function xclqck() {
 
 
 
-//console.log(`${xccksp1url}`)
-//console.log(`${xccksp1hd}`)
-//console.log(`${xccksp1body}`)
+console.log(`${xcfp1url}`)
+console.log(`${xcfp1hd}`)
+console.log(`${xcfp1body}`)
+console.log(`${xcsj1url}`)
+console.log(`${xcsj1hd}`)
+console.log(`${xcsj1body}`)
+console.log(`${xcqd1url}`)
+console.log(`${xcqd1hd}`)
+console.log(`${xcqd1body}`)
 
 //激活任务
 function jhxcckspqd(timeout = 0) {
