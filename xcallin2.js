@@ -211,15 +211,15 @@ function xclqck() {
 
 
 
-console.log(`${xcfp1url}`)
-console.log(`${xcfp1hd}`)
-console.log(`${xcfp1body}`)
-console.log(`${xcsj1url}`)
-console.log(`${xcsj1hd}`)
-console.log(`${xcsj1body}`)
-console.log(`${xcqd1url}`)
-console.log(`${xcqd1hd}`)
-console.log(`${xcqd1body}`)
+//console.log(`${xcfp1url}`)
+//console.log(`${xcfp1hd}`)
+//console.log(`${xcfp1body}`)
+console.log(`${xclq1url}`)
+console.log(`${xclq1hd}`)
+console.log(`${xclq1body}`)
+//console.log(`${xcqd1url}`)
+//console.log(`${xcqd1hd}`)
+//console.log(`${xcqd1body}`)
 
 //激活任务
 function jhxcckspqd(timeout = 0) {
@@ -897,8 +897,8 @@ function xclq1(timeout = 0) {
 cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
 auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
 appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-  let url = {url : xclq1url,
+let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+  //let url = {url : xclq1url,
         headers : 
 JSON.parse(xclq1hd),
         body : `{"channelCode":"6733N074D4","taskId":36,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `}
@@ -1108,8 +1108,8 @@ JSON.parse(xclq1hd),
  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
- //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
-   let url = {url : xclq1url,
+ let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userAcceptPrize`,
+   //let url = {url : xclq1url,
          headers : 
  JSON.parse(xclq1hd),
          body : `{"channelCode":"FK023GVTDY","taskId":60,"head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}} `}
@@ -1134,6 +1134,7 @@ JSON.parse(xclq1hd),
  function xclq9(timeout = 0) {
     return new Promise((resolve) => {
  //user_id=xccksp1url.match(/user_id=(\d+)/)[1]
+ cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
  cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
  auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
  appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
@@ -1166,11 +1167,16 @@ JSON.parse(xclq1hd),
   function xcsj(timeout = 0) {
     return new Promise((resolve) => {
   //user_id=xcfp1url.match(/user_id=(\d+)/)[1]
-  //let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-    let url = {url : xcsj1url,
+cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+  let url = {url : `https://m.ctrip.com/restapi/soa2/16575/getZzlUserCard`,
+    //let url = {url : xcsj1url,
           headers : 
-  JSON.parse(xcsj1hd),
-          body : xcsj1body
+          {"Content-Type": "application/json",
+          "Cookie": "${cookie}"},
+          body : `{"activityId":"MKT_LOTTERY_1616744889859","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
   }
         $.post(url, async (err, resp, data) => {
           try {
@@ -1205,11 +1211,15 @@ JSON.parse(xclq1hd),
 function xcfpqd(timeout = 0) {
   return new Promise((resolve) => {
 //user_id=xcfp1url.match(/user_id=(\d+)/)[1]
-//let url = {url : `https://m.ctrip.com/restapi/mkt/taskdistribute/userTodoTask`,
-  let url = {url : xcfp1url,
-        headers : 
-JSON.parse(xcfp1hd),
-        body : xcfp1body
+cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
+cid = xccksp1body.match(/"cid":"(\d+)"/)[1]
+auth = xccksp1body.match(/"auth":"(\w+)"/)[1]
+appId1 = xccksp1body.match(/"appId","value":"(\w+)"/)[1]
+let url = {url : `https://m.ctrip.com/restapi/soa2/16575/sendZzlCardToUser`,
+  //let url = {url : xcfp1url,
+        headers :{"Content-Type": "application/json",
+                 "Cookie": "${cookie}"},
+        body : `{"activityId":"MKT_LOTTERY_1616744889859","head":{"cid":"${cid}","ctok":"","cver":"1.1.91","lang":"01","sid":"","syscode":"30","auth":"${auth}","sauth":"","extension":[{"name":"appId","value":"${appId1}"},{"name":"scene","value":"1089"}]}}`
 }
       $.post(url, async (err, resp, data) => {
         try {
