@@ -548,7 +548,7 @@ cookie = xccksp1hd.match(/"Cookie":"([\w=&;]+)"/)[1]
 cid = xcqd1body.match(/"cid":"(\d+)"/)[1]
 auth = xcqd1body.match(/"auth":"(\w+)"/)[1]
 appId1 = xcqd1body.match(/"appId","value":"(\w+)"/)[1]
-openid = xcqd1body.match(/"openId":"(\[w-]+)"/)[1]
+openid = xcqd1body.match(/"openId":"(\S+)"/)[1]
   let url = {url : `https://m.ctrip.com/restapi/soa2/16575/signin`,
     //let url = {url : xcqd1url,
           headers : 
