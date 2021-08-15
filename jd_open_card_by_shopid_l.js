@@ -80,7 +80,7 @@ if ($.isNode()) {
         await getVenderId()
       }
       
-      await getOpenCardGift()
+      //await getOpenCardGift()
       // console.log(giftInfo)
       // if (openCardStatus==1){
       //   console.log(`【账号${$.index}】（${$.nickName || $.UserName}） 已经是【${venderCardName}】家会员了。`)
