@@ -86,17 +86,18 @@ if ($.isNode()) {
         console.log(`【账号${$.index}】（${$.nickName || $.UserName}） 已经是【${venderCardName}】家会员了。`)
         // giftInfo=""
         continue;
-      }else{
-        // if (giftBean<1){
-        //   console.log(`情报有误，【${venderCardName}】家豆子已经么有了，下次学学香港记者跑快点🏃。`)
-        //   return;
-        // }
-        // console.log(`【${venderCardName}】入会送（${giftBean}京豆）；开卡活动ID：${activityId}`)
-        if (giftBean<beanGECnt){
-          console.log(`豆子也忒少了，少于${beanGECnt}豆的情报不要发给我😡。`)
-          return;
-        } 
       }
+      // else{
+      //   if (giftBean<1){
+      //     console.log(`情报有误，【${venderCardName}】家豆子已经么有了，下次学学香港记者跑快点🏃。`)
+      //     return;
+      //   }
+      //   console.log(`【${venderCardName}】入会送（${giftBean}京豆）；开卡活动ID：${activityId}`)
+      //   if (giftBean<beanGECnt){
+      //     console.log(`豆子也忒少了，少于${beanGECnt}豆的情报不要发给我😡。`)
+      //     return;
+      //   } 
+      // }
       if (activityId >10){
         await openCard()
       }
