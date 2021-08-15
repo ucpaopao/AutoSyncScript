@@ -18,7 +18,7 @@ let shopId="",venderId="",giftInfo="";
 //店铺会员礼包信息
 let venderCardName="",openCardStatus="",giftBean="",activityId="";
 //入会豆子条件大于等于该值才去入会
-let beanGECnt=0
+let beanGECnt=-1
 
 if (process.env.OPEN_CARD_SHOP_ID && process.env.OPEN_CARD_SHOP_ID != "") {
   shopId = process.env.OPEN_CARD_SHOP_ID;
