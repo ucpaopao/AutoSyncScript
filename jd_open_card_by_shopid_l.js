@@ -18,7 +18,7 @@ let shopId="",venderId="",giftInfo="";
 //店铺会员礼包信息
 let venderCardName="",openCardStatus="",giftBean="",activityId="";
 //入会豆子条件大于等于该值才去入会
-let beanGECnt=-1
+let beanGECnt=0
 
 if (process.env.OPEN_CARD_SHOP_ID && process.env.OPEN_CARD_SHOP_ID != "") {
   shopId = process.env.OPEN_CARD_SHOP_ID;
@@ -82,11 +82,11 @@ if ($.isNode()) {
       
       await getOpenCardGift()
       // console.log(giftInfo)
-      if (openCardStatus==1){
-        console.log(`【账号${$.index}】（${$.nickName || $.UserName}） 已经是【${venderCardName}】家会员了。`)
-        // giftInfo=""
-        continue;
-      }
+      // if (openCardStatus==1){
+      //   console.log(`【账号${$.index}】（${$.nickName || $.UserName}） 已经是【${venderCardName}】家会员了。`)
+      //   // giftInfo=""
+      //   continue;
+      // }
       // else{
       //   if (giftBean<1){
       //     console.log(`情报有误，【${venderCardName}】家豆子已经么有了，下次学学香港记者跑快点🏃。`)
