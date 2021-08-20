@@ -14,7 +14,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const exec = require('child_process').execSync
 const fs = require('fs')
 const download = require('download');
-let resultPath = "./result.txt";
+let resultPath = "./JD_DailyBonus.txt";
 let JD_DailyBonusPath = "./JD_DailyBonus.js";
 let outPutUrl = './';
 let NodeSet = 'CookieSet.json';
@@ -35,6 +35,8 @@ if ($.isNode()) {
   await requireConfig();
   // 下载最新代码
   await downFile();
+  await deleteFile(resultPath);//删除result.txt
+  await deleteFile(NodeSet);//删除CookieSet.json
   if (!await fs.existsSync(JD_DailyBonusPath)) {
     console.log(`\nJD_DailyBonus.js 文件不存在，停止执行${$.name}\n`);
     await notify.sendNotify($.name, `本次执行${$.name}失败，JD_DailyBonus.js 文件下载异常，详情请查看日志`)
@@ -107,6 +109,8 @@ async function execSign() {
     }
     //运行完成后，删除下载的文件
     await deleteFile(resultPath);//删除result.txt
+    await deleteFile(NodeSet);//删除CookieSet.json
+    await $.wait(2000)
     console.log(`\n\n*****************${new Date(new Date().getTime()).toLocaleString('zh', {hour12: false})} 京东账号${$.index} ${$.nickName || $.UserName} ${$.name}完成*******************\n\n`);
   } catch (e) {
     console.log("京东签到脚本执行异常:" + e);
