@@ -132,9 +132,6 @@
 
 #点点卷
 36 0,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
-
-
-
 #validate.txt 生成
 58 7,15,23 * * * node /scripts/jd_validate_Worker.js >> /scripts/logs/jd_validate_Worker.log 2>&1
 
@@ -171,6 +168,10 @@
 #资产通知另外一个
 0 0,12,18 * * * node /scripts/jd_bean_change_Mod.js >> /scripts/logs/jd_bean_change_Mod.log 2>&1
 #星系牧场
-1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.js 2>&1
+1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
 #领卷中心签到
-15 0 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.js 2>&1
+15 0 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.log 2>&1
+#早起福利
+30 0,6 * * * node /scripts/jd_goodMorning.js >> /scripts/logs/jd_goodMorning.log 2>&1
+#早起赢现金
+30 0,7 * * * node /scripts/jd_morningSc.js >> /scripts/logs/jd_morningSc.log 2>&1
