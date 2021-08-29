@@ -172,3 +172,5 @@
 0 0,12,18 * * * node /scripts/jd_bean_change_Mod.js >> /scripts/logs/jd_bean_change_Mod.log 2>&1
 #星系牧场
 1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.js 2>&1
+#领卷中心签到
+15 0 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.js 2>&1
