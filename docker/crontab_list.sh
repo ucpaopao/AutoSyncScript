@@ -179,3 +179,5 @@
 18 7,20 * * * node /scripts/jd_foodRunning.js >> /scripts/logs/jd_foodRunning.log 2>&1
 #美丽研究院
 1 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
+#赚金币
+0 5 * * * node /scripts/jd_zjb.js  >> /scripts/logs/jd_zjb.log 2>&1
