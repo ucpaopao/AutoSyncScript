@@ -136,8 +136,7 @@
 58 7,15,23 * * * node /scripts/jd_validate_Worker.js >> /scripts/logs/jd_validate_Worker.log 2>&1
 
 
-#翻翻乐助力开包
-1 0 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1
+
 #翻翻乐
 1 6-21/1 * * * node /scripts/jd_618redpacket.js >> /scripts/logs/jd_618redpacket.log 2>&1
 
@@ -191,3 +190,5 @@
 20 7,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
 #汪汪乐园养joy
 20 * * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
+#积卡
+10 8,22 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1
