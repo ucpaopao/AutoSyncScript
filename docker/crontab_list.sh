@@ -180,4 +180,8 @@
 #美丽研究院
 1 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
 #赚金币
-0 5 * * * node /scripts/jd_zjb.js  >> /scripts/logs/jd_zjb.log 2>&1
+0 5 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1
+#天天优惠大乐透
+15 6 * * * node /scripts/jd_DrawEntrance.js >> /scripts/logs/jd_DrawEntrance.log 2>&1
+#积分换话费
+33 7,19 * * * node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1
