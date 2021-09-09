@@ -188,6 +188,6 @@
 #赚30元
 0 6 * * * node /scripts/jd_earn30.js >> /scripts/logs/jd_earn30.log 2>&1
 #汪汪乐园每日任务
-20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
+20 7,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
 #汪汪乐园养joy
 20 * * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
