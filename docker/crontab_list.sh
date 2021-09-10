@@ -192,3 +192,5 @@
 20 * * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
 #积卡
 10 8,22 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1
+#女装盲盒
+35 1,23 * * * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
