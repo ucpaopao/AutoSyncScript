@@ -194,3 +194,5 @@
 10 8,22 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1
 #女装盲盒
 35 1,23 * * * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
+#京小鸽
+45 0,18 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
