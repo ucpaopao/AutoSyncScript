@@ -5,7 +5,7 @@
  * By X1a0He
  * https://github.com/X1a0He/jd_scripts_fixed
  * */
-const $ = new Env("京东日资产变动");
+const $ = new Env("京东简化版日资产变动");
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cookiesArr = [], cookie = "", message = ``;
